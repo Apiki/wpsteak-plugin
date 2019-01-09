@@ -12,8 +12,10 @@ node_modules/
 # Composer packages
 /vendor/
 
+# sami docs
+api-reference/
+
 # PHPUnit
-phpunit.xml
 /tests/_reports
 
 # NPM lockfile as it causes more problems than it solves

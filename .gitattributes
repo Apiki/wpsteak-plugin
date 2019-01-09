@@ -1,0 +1,10 @@
+/tests export-ignore
+/.editorconfig export-ignore
+/.eslintignore export-ignore
+/.eslintrc export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.stylelintrc.json export-ignore
+/phpcs.xml export-ignore
+/phpunit.xml export-ignore
+/.sami.php export-ignore

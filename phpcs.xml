@@ -14,6 +14,8 @@
 	<exclude-pattern>node_modules/</exclude-pattern>
 	<exclude-pattern>resources/</exclude-pattern>
 	<exclude-pattern>vendor/</exclude-pattern>
+	<!-- Scrutinizer dependency -->
+	<exclude-pattern>wordpress/</exclude-pattern>
 
 	<!-- How to scan -->
 	<arg value="sp"/> <!-- Show sniff and progress -->

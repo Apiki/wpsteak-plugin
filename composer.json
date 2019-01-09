@@ -34,6 +34,6 @@
     ],
     "lint": "phpcs",
     "lint:fix": "phpcbf",
-    "test": "phpunit --coverage-html coverage"
+    "test": "phpunit"
   }
 }

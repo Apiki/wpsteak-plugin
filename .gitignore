@@ -12,11 +12,9 @@ node_modules/
 # Composer packages
 /vendor/
 
-# Coverage
-coverage/
-
 # PHPUnit
 phpunit.xml
+/tests/_reports
 
 # NPM lockfile as it causes more problems than it solves
 package-lock.json

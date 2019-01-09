@@ -18,10 +18,10 @@ trait Common {
 	 * @param string  $singular_lower Singular label lower case.
 	 * @param string  $plural Plural label.
 	 * @param string  $plural_lower Plural label lower case.
-	 * @param boolean $is_female Is female label.
+	 * @param integer $is_female Is female label.
 	 * @return array
 	 */
-	protected static function get_defaults( $singular, $singular_lower, $plural, $plural_lower, $is_female = false ) {
+	protected static function get_defaults( string $singular, string $singular_lower, string $plural, string $plural_lower, int $is_female = 0 ) {
 		return [
 			'name'              => $plural,
 			'singular_name'     => $singular,

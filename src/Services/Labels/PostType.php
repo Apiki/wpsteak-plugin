@@ -19,11 +19,11 @@ trait PostType {
 	 *
 	 * @param string  $singular Singular label.
 	 * @param string  $plural Plural label.
-	 * @param boolean $is_female Is female label.
+	 * @param integer $is_female Is female label.
 	 * @param array   $defaults Defaults label.
 	 * @return array
 	 */
-	public function get_labels( $singular, $plural, $is_female = false, $defaults = [] ) {
+	public function get_labels( string $singular, string $plural, int $is_female = 0, array $defaults = [] ) {
 		$singular_lower = strtolower( $singular );
 		$plural_lower   = strtolower( $plural );
 

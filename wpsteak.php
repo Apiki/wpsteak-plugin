@@ -23,7 +23,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 /**
  * Retrieve the main plugin instance.
  *
- * @return Plugin
+ * @return \Cedaro\WP\Plugin
  */
 function wpsteak() {
 	static $instance;

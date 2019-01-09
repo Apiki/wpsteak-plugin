@@ -1,6 +1,6 @@
 language: php
 php:
-  - '7.0'
+  - '7.1'
 before_script: make
 
 deploy:
@@ -9,4 +9,4 @@ deploy:
   project: ./api-reference/build/
   domain: wpsteak-api.surge.sh
   on:
-    php: '7.0'
+    php: '7.1'

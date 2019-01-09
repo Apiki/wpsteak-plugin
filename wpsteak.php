@@ -11,7 +11,7 @@
  * Author URI: https://apiki.com/
  * Text Domain: wpsteak
  * Domain Path: /languages
- * Requires PHP: 7.0
+ * Requires PHP: 7.1
  */
 
 use Cedaro\WP\Plugin\PluginFactory;

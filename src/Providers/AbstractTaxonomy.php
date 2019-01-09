@@ -47,7 +47,7 @@ abstract class AbstractTaxonomy extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	/**
 	 * Get post type.
 	 *
-	 * Return your Entity::POST_TYPE, for a better code reuse.
+	 * Return your Entity::TAXONOMY, for a better code reuse.
 	 *
 	 * @return string
 	 */

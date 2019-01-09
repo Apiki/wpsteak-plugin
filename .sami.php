@@ -11,7 +11,7 @@ use Sami\Parser\Filter\PublicFilter;
 
 define( 'DS', DIRECTORY_SEPARATOR );
 
-$repository = 'Apiki/wpsteak-plugin';
+$repository = 'apiki/wpsteak-plugin';
 $relative_dir = 'src';
 $dir = __DIR__ . DS . $relative_dir;
 $documentation_dir = __DIR__ . DS . 'api-reference';

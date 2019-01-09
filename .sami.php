@@ -18,7 +18,7 @@ $documentation_dir = __DIR__ . DS . 'api-reference';
 
 $versions = GitVersionCollection::create($dir)
 	->addFromTags('*.*.*')
-	->add('develop', 'develop branch');
+	->add('master', 'master branch');
 
 return new \Sami\Sami( $dir, [
 	'title' => 'WP Steak',

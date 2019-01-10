@@ -17,7 +17,7 @@ abstract class AbstractTaxonomy extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	use Labels\Taxonomy;
 
 	/**
-	 * {@inheritDoc}
+	 * Register hooks.
 	 *
 	 * @return void
 	 */

@@ -17,7 +17,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	use Services\Assets;
 
 	/**
-	 * {@inheritDoc}
+	 * Register hooks.
 	 *
 	 * @return void
 	 */

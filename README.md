@@ -1,4 +1,10 @@
 # WP Steak [![Build Status](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/build-status/develop) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=develop) [![Code Coverage](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=develop)
+## Features
+* [Dependency injection container](https://container.thephpleague.com/);
+* Ready for unit tests with PHPUnit;
+* PHP CodeSniffer configured with WordPress Coding Standards;
+* Wonderful resources processing configuration extracted from [wpemerge-theme](https://github.com/htmlburger/wpemerge-theme);
+* PHP PSR-4 autoloading for all your source code and tests;
 ## Requirements
 * PHP >= 7.1
 * Composer

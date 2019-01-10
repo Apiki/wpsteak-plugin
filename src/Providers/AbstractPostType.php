@@ -17,7 +17,7 @@ abstract class AbstractPostType extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	use Labels\PostType;
 
 	/**
-	 * {@inheritDoc}
+	 * Register hooks.
 	 *
 	 * @return void
 	 */

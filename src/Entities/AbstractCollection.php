@@ -29,7 +29,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	private $position = 0;
 
 	/**
-	 * {@inheritDoc}
+	 * Add blueprint.
 	 *
 	 * @param array $properties Properties.
 	 * @return EntityInterface
@@ -61,7 +61,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Add entity.
 	 *
 	 * @param EntityInterface $entity Entity.
 	 * @param mixed           $key Key.
@@ -77,7 +77,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Current.
 	 *
 	 * @return mixed
 	 */
@@ -86,7 +86,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Key.
 	 *
 	 * @return integer
 	 */
@@ -95,7 +95,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Next position.
 	 *
 	 * @return void
 	 */
@@ -104,7 +104,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Rewind position.
 	 *
 	 * @return void
 	 */
@@ -113,7 +113,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Is a valid position.
 	 *
 	 * @return boolean
 	 */
@@ -122,7 +122,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Offset exists.
 	 *
 	 * @param mixed $offset Offset.
 	 * @return boolean
@@ -132,7 +132,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Offset get.
 	 *
 	 * @param mixed $offset Offset.
 	 * @return mixed|null
@@ -146,7 +146,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Offset set.
 	 *
 	 * @param mixed $offset Offset.
 	 * @param mixed $value Value.
@@ -157,7 +157,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Offset unset.
 	 *
 	 * @param mixed $offset Offset.
 	 * @return void
@@ -167,7 +167,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Total count.
 	 *
 	 * @return integer
 	 */

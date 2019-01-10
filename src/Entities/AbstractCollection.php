@@ -5,6 +5,8 @@
  * @package App
  */
 
+declare(strict_types=1);
+
 namespace App\Entities;
 
 /**
@@ -50,7 +52,7 @@ abstract class AbstractCollection implements CollectionInterface {
 	 * @param array           $properties Properties.
 	 * @return void
 	 */
-	private function populate_entity( $instance, array $properties ) {
+	private function populate_entity( EntityInterface $instance, array $properties ) {
 		foreach ( $properties as $key => $value ) {
 			$method = "set_{$key}";
 

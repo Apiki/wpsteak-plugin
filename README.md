@@ -1,4 +1,7 @@
 # WP Steak [![Build Status](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/build-status/develop) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=develop) [![Code Coverage](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=develop)
+## Requirements
+* PHP >= 7.1
+* Composer
 ## API Reference
 http://wpsteak-api.surge.sh/master/
 ## Directory structure

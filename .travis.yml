@@ -1,12 +1,12 @@
 language: php
 php:
   - '7.1'
-before_script: make
+  
+install: 
+  - make
 
 deploy:
   provider: surge
   skip_cleanup: true
   project: ./api-reference/build/
   domain: wpsteak-api.surge.sh
-  on:
-    php: '7.1'

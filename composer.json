@@ -1,6 +1,6 @@
 {
-  "name": "apiki/wpsteak",
-  "description": "A fully structured plugin.",
+  "name": "apiki/wpsteak-plugin",
+  "description": "A fully structured WordPress plugin.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-only",
   "require": {

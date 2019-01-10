@@ -13,7 +13,7 @@ namespace App\Loggers;
 class WordPress extends \Psr\Log\AbstractLogger {
 
 	/**
-	 * {@inheritDoc}
+	 * Log.
 	 *
 	 * @param mixed  $level Level.
 	 * @param string $message Message.

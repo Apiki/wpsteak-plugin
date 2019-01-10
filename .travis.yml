@@ -6,7 +6,7 @@ branches:
   only:
   - master
 
-install: 
+script: 
   - make
 
 deploy:

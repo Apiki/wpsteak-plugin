@@ -17,7 +17,7 @@
     "wp-coding-standards/wpcs": "1.2.1",
     "10up/wp_mock": "0.3.0",
     "phpunit/phpunit": "6.5.13",
-    "phpcompatibility/phpcompatibility-wp": "^2.0"
+    "phpcompatibility/phpcompatibility-wp": "2.0.0"
   },
   "autoload": {
     "psr-4": {

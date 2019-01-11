@@ -31,15 +31,13 @@ const babelLoader = {
     comments: false,
     presets: [
       [
-        'env',
+        '@babel/env',
         {
           targets: {
             browsers: ['last 3 versions'],
           },
         },
       ],
-      // airbnb not included as stage-2 already covers it
-      'stage-2',
     ],
   },
 };
@@ -169,9 +167,7 @@ module.exports = {
           use: [
             {
               loader: 'css-loader',
-              options: {
-                minimize: true,
-              },
+              options: {},
             },
             {
               loader: 'postcss-loader',

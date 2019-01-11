@@ -17,7 +17,7 @@
     "i18n:pot": "wpi18n makepot --exclude=api-reference,dist,node_modules,resources,tests,vendor"
   },
   "dependencies": {
-    "airbnb-browser-shims": "2.1.1",
+    "airbnb-browser-shims": "3.1.0",
     "autoprefixer": "8.6.5",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",

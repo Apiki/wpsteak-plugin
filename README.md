@@ -10,6 +10,9 @@
 * Composer
 ## API Reference
 http://wpsteak-api.surge.sh/master/
+## Quickstart
+1. Browse to `wp-content/plugins`.
+1. Run `composer create-project apiki/wpsteak-plugin your-plugin-name`.
 ## Directory structure
 ```
 .

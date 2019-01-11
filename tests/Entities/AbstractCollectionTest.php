@@ -13,7 +13,7 @@ use App\Test\Framework\Mock\Entity;
 /**
  * Abstract collection test class.
  */
-final class AbstractCollectionTest extends \App\Test\TestCase {
+final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 
 	/**
 	 * Test add blueprint.

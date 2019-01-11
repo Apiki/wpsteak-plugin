@@ -12,7 +12,7 @@ use App\Entities\AbstractTerm as Entity;
 /**
  * Abstract term test class.
  */
-final class AbstractTermTest extends \App\Test\TestCase {
+final class AbstractTermTest extends \PHPUnit\Framework\TestCase {
 
 	/**
 	 * Test get term.

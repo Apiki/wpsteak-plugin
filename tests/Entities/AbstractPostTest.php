@@ -12,7 +12,7 @@ use App\Entities\AbstractPost as Entity;
 /**
  * Abstract post test class.
  */
-final class AbstractPostTest extends \App\Test\TestCase {
+final class AbstractPostTest extends \PHPUnit\Framework\TestCase {
 
 	/**
 	 * Test get post.

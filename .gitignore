@@ -9,6 +9,9 @@
 # Build modules
 node_modules/
 
+# Yarn
+/yarn-error.log
+
 # Composer packages
 /vendor/
 

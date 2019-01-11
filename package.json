@@ -29,7 +29,7 @@
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "1.1.11",
     "imagemin-mozjpeg": "7.0.0",
-    "imagemin-webpack-plugin": "2.3.0",
+    "imagemin-webpack-plugin": "2.4.0",
     "import-glob": "1.5.0",
     "loader-utils": "1.1.0",
     "node-sass": "4.10.0",

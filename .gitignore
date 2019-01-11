@@ -15,7 +15,11 @@ node_modules/
 # sami docs
 api-reference/
 
+# PHPCS
+/phpcs.xml
+
 # PHPUnit
+/phpunit.xml
 /tests/_reports
 
 # NPM lockfile as it causes more problems than it solves

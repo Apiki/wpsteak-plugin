@@ -53,7 +53,7 @@
     "node-wp-i18n": "1.2.2",
     "stylelint": "9.9.0",
     "stylelint-config-recommended-scss": "3.2.0",
-    "stylelint-order": "0.8.1",
+    "stylelint-order": "2.0.0",
     "stylelint-scss": "3.4.4"
   }
 }

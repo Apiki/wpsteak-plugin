@@ -25,6 +25,9 @@ api-reference/
 # NPM lockfile as it causes more problems than it solves
 package-lock.json
 
+# Sami
+/sami.phar
+
 # Common
 .DS_Store
 .DS_Store?

@@ -1,6 +1,6 @@
 <?php
 /**
- * Labels Taxonomy.
+ * Taxonomy.
  *
  * @package App
  */
@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace App\Services\Labels;
 
 /**
- * Labels Taxonomy trait.
+ * Taxonomy trait.
  */
 trait Taxonomy {
 

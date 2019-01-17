@@ -1,6 +1,6 @@
 <?php
 /**
- * Assets provider.
+ * Assets.
  *
  * @package App
  */
@@ -12,7 +12,7 @@ namespace App\Providers;
 use App\Services;
 
 /**
- * Assets provider class.
+ * Assets class.
  */
 class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 

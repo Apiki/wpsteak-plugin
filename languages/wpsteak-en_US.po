@@ -6,198 +6,200 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
 "POT-Creation-Date: 2019-01-17 23:19:45+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: node-wp-i18n 1.2.2\n"
+"PO-Revision-Date: 2019-01-17 21:57-0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
 
 #: src/Repositories/AbstractTerm.php:44
 msgid "Termo vazio."
-msgstr ""
+msgstr "Empty term."
 
 #: src/Repositories/AbstractTerm.php:61
 msgid "Taxonomia não existe"
-msgstr ""
+msgstr "Taxonomy does not exist"
 
-#: src/Services/Labels/Common.php:33
 #. translators: %s label plural lower.
+#: src/Services/Labels/Common.php:33
 msgid "Todas %s"
 msgid_plural "Todos %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "All %s"
+msgstr[1] "All %s"
 
-#: src/Services/Labels/Common.php:35
 #. translators: %s label singular lower.
+#: src/Services/Labels/Common.php:35
 msgid "Editar %s"
-msgstr ""
+msgstr "Edit %s"
 
-#: src/Services/Labels/Common.php:37 src/Services/Labels/PostType.php:37
 #. translators: %s label singular lower.
 #. translators: %s label plural lower.
+#: src/Services/Labels/Common.php:37 src/Services/Labels/PostType.php:37
 msgid "Ver %s"
-msgstr ""
+msgstr "See %s"
 
-#: src/Services/Labels/Common.php:39
 #. translators: %s label singular lower.
+#: src/Services/Labels/Common.php:39
 msgid "Adicionar nova %s"
 msgid_plural "Adicionar novo %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Add new %s"
+msgstr[1] "Add new %s"
 
-#: src/Services/Labels/Common.php:41
 #. translators: %s label singular.
+#: src/Services/Labels/Common.php:41
 msgid "%s pai:"
-msgstr ""
+msgstr "%s parent:"
 
-#: src/Services/Labels/Common.php:43
 #. translators: %s label plural lower.
+#: src/Services/Labels/Common.php:43
 msgid "Buscar %s"
-msgstr ""
+msgstr "Search %s"
 
-#: src/Services/Labels/Common.php:45
 #. translators: %s label singular lower.
+#: src/Services/Labels/Common.php:45
 msgid "Nenhuma %s encontrada."
 msgid_plural "Nenhum %s encontrado."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "No %s found."
+msgstr[1] "No %s found."
 
 #: src/Services/Labels/PostType.php:33
 msgid "Adicionar nova"
 msgid_plural "Adicionar novo"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Add new"
+msgstr[1] "Add new"
 
-#: src/Services/Labels/PostType.php:35
 #. translators: %s label singular female lower; %s label singular male lower;
+#: src/Services/Labels/PostType.php:35
 msgid "Nova %s"
 msgid_plural "Novo %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "New %s"
+msgstr[1] "New %s"
 
-#: src/Services/Labels/PostType.php:39
 #. translators: %s label singular lower.
+#: src/Services/Labels/PostType.php:39
 msgid "Nenhuma %s encontrada na Lixeira."
 msgid_plural "Nenhum %s encontrado na Lixeira."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "No %s found on trash."
+msgstr[1] "No %s found on trash."
 
+#. translators: %s label plural lower.
 #: src/Services/Labels/PostType.php:41
-#. translators: %s label plural lower.
 msgid "Arquivos de %s"
-msgstr ""
+msgstr "Archive of %s"
 
-#: src/Services/Labels/PostType.php:43
 #. translators: %s label plural lower.
+#: src/Services/Labels/PostType.php:43
 msgid "Atributos de %s"
-msgstr ""
+msgstr "Attributes of %s"
 
-#: src/Services/Labels/PostType.php:45
 #. translators: %s label singular lower.
+#: src/Services/Labels/PostType.php:45
 msgid "Inserir na %s"
 msgid_plural "Inserir no %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Insert on %s"
+msgstr[1] "Insert on %s"
 
-#: src/Services/Labels/PostType.php:47
 #. translators: %s label singular lower.
+#: src/Services/Labels/PostType.php:47
 msgid "Carregado para esta %s"
 msgid_plural "Carregado para este %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Uploaded for this %s"
+msgstr[1] "Uploaded for this %s"
 
 #: src/Services/Labels/PostType.php:48
 msgid "Imagem destacada"
-msgstr ""
+msgstr "Featured image"
 
 #: src/Services/Labels/PostType.php:49
 msgid "Definir imagem destacada"
-msgstr ""
+msgstr "Set featured image"
 
 #: src/Services/Labels/PostType.php:50
 msgid "Remover imagem destacada"
-msgstr ""
+msgstr "Remove featured image"
 
 #: src/Services/Labels/PostType.php:51
 msgid "Usar como imagem destacada"
-msgstr ""
+msgstr "Use as a featured image"
 
+#. translators: %s label plural lower.
 #: src/Services/Labels/PostType.php:53
-#. translators: %s label plural lower.
 msgid "Filtrar lista de %s"
-msgstr ""
+msgstr "Filter %s list"
 
+#. translators: %s label plural lower.
 #: src/Services/Labels/PostType.php:55
-#. translators: %s label plural lower.
 msgid "Navegação da lista de %s"
-msgstr ""
+msgstr "%s list navigation"
 
-#: src/Services/Labels/PostType.php:57
 #. translators: %s label plural lower.
+#: src/Services/Labels/PostType.php:57
 msgid "Lista de %s"
-msgstr ""
+msgstr "%s list"
 
+#. translators: %s label singular lower.
 #: src/Services/Labels/Taxonomy.php:34
-#. translators: %s label singular lower.
 msgid "Atualizar %s"
-msgstr ""
+msgstr "Update %s"
 
-#: src/Services/Labels/Taxonomy.php:36
 #. translators: %s label singular lower.
+#: src/Services/Labels/Taxonomy.php:36
 msgid "Nome da nova %s"
 msgid_plural "Nome do novo %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s name"
+msgstr[1] "%s name"
 
+#. translators: %s label singular.
 #: src/Services/Labels/Taxonomy.php:38
-#. translators: %s label singular.
 msgid "%s pai"
-msgstr ""
+msgstr "%s parent"
 
-#: src/Services/Labels/Taxonomy.php:40
 #. translators: %s label singular.
+#: src/Services/Labels/Taxonomy.php:40
 msgid "%s populares"
-msgstr ""
+msgstr "Popular %s"
 
-#: src/Services/Labels/Taxonomy.php:42
 #. translators: %s label plural lower.
+#: src/Services/Labels/Taxonomy.php:42
 msgid "Separe as %s com virgulas"
 msgid_plural "Separe os %s com virgulas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Separate %s with comma"
+msgstr[1] "Separate %s with comma"
 
-#: src/Services/Labels/Taxonomy.php:44
 #. translators: %s label singular lower.
+#: src/Services/Labels/Taxonomy.php:44
 msgid "Adicionar ou remover %s"
-msgstr ""
+msgstr "Add or remove %s"
 
-#: src/Services/Labels/Taxonomy.php:46
 #. translators: %s label plural lower.
+#: src/Services/Labels/Taxonomy.php:46
 msgid "Escolher entre as %s mais usadas"
 msgid_plural "Escolher entre os %s mais usados"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Choose from the most used %s"
+msgstr[1] "Choose from the most used %s"
 
-#: src/Services/Labels/Taxonomy.php:48
 #. translators: %s label singular lower.
+#: src/Services/Labels/Taxonomy.php:48
 msgid "Voltar para as %s"
 msgid_plural "Voltar para os %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Back to %s"
+msgstr[1] "Back to %s"
 
 #. Plugin Name of the plugin/theme
 msgid "WP Steak"
-msgstr ""
+msgstr "WP Steak"
 
 #. Description of the plugin/theme
 msgid "A fully structured plugin."
-msgstr ""
+msgstr "A fully structured plugin."
 
 #. Author of the plugin/theme
 msgid "Apiki"
-msgstr ""
+msgstr "Apiki"
 
 #. Author URI of the plugin/theme
 msgid "https://apiki.com/"
-msgstr ""
+msgstr "https://apiki.com/"

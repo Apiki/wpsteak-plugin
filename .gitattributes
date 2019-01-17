@@ -6,6 +6,7 @@
 /.sami.php export-ignore
 /.stylelintrc.json export-ignore
 /.travis.yml export-ignore
+/.vscode
 /makefile
 /phpcs.xml.dist export-ignore
 /phpunit.xml export-ignore

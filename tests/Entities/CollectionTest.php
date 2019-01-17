@@ -1,14 +1,14 @@
 <?php
 /**
- * Abstract collection test.
+ * Collection test.
  *
  * @package App\Test
  */
 
 namespace App\Test\Entities;
 
-use App\Entities\AbstractCollection as EntityCollection;
-use App\Test\Framework\Mock\Entity;
+use App\Entities\Collection as Collection;
+use App\Entities\EntityInterface as Entity;
 
 /**
  * Abstract collection test class.
@@ -16,41 +16,15 @@ use App\Test\Framework\Mock\Entity;
 final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 
 	/**
-	 * Test add blueprint.
-	 *
-	 * @return void
-	 */
-	public function test_add_blueprint() {
-		$collection = \Mockery::mock( EntityCollection::class )
-			->shouldAllowMockingProtectedMethods()
-			->makePartial();
-
-		$collection
-			->shouldReceive( 'build_entity' )
-			->andReturn( new Entity() );
-
-		$this->assertInstanceOf(
-			Entity::class,
-			$collection->add_blueprint(
-				[
-					'post_id'      => 0,
-					'user_id'      => 0,
-					'content_type' => 'recipe',
-				]
-			)
-		);
-	}
-
-	/**
 	 * Test foreach behavior for collection.
 	 *
 	 * @return void
 	 */
 	public function test_foreach_behavior_for_collection() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection->add_entity( $entity );
 		$counter = 0;
@@ -70,10 +44,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_array_access_retrieval() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$this->assertNull( $collection[0] );
 		$collection->add_entity( $entity );
@@ -86,10 +60,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_array_access_retrieval_after_unspecified_addition() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection[] = $entity;
 		$this->assertSame( $entity, $collection[0] );
@@ -101,10 +75,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_array_access_retrieval_after_specified_addition() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection[1] = $entity;
 
@@ -117,10 +91,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_array_access_unset() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection[] = $entity;
 
@@ -135,10 +109,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_array_access_exists() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection[] = $entity;
 
@@ -153,10 +127,10 @@ final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
 	 * @return void
 	 */
 	public function test_countable() {
-		$collection = \Mockery::mock( EntityCollection::class )
+		$collection = \Mockery::mock( Collection::class )
 			->makePartial();
 
-		$entity = new Entity();
+		$entity = \Mockery::mock( Entity::class );
 
 		$collection[] = $entity;
 

@@ -10,7 +10,9 @@
  */
 
 return [
-	'service_providers' => [],
+	'service_providers' => [
+		App\Services\PostMeta\ServiceProvider::class,
+	],
 	'hook_providers'    => [
 		App\Providers\Assets::class,
 	],

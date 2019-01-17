@@ -39,7 +39,7 @@ abstract class AbstractTerm implements TermInterface {
 	 * {@inheritDoc}
 	 *
 	 * @param \WP_Term $value Term.
-	 * @return self
+	 * @return TermInterface
 	 */
 	public function set_term( \WP_Term $value ) : TermInterface {
 		$this->term = $value;

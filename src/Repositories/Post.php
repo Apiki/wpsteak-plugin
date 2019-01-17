@@ -7,50 +7,13 @@
 
 namespace App\Repositories;
 
-use App\Entities\Post\Entity;
 use App\Entities\Post\Collection;
-use App\Services\MetaInterface;
+use App\Entities\Post\Entity;
 
 /**
  * Post class.
  */
-class Post {
-
-	/**
-	 * Meta.
-	 *
-	 * @var MetaInterface
-	 */
-	private $meta;
-
-	/**
-	 * Construct.
-	 *
-	 * @param MetaInterface $meta Meta.
-	 */
-	public function __construct( MetaInterface $meta ) {
-		$this->meta = $meta;
-	}
-
-	/**
-	 * Get post.
-	 *
-	 * @param integer $id Id.
-	 * @return \WP_Post|null
-	 */
-	protected function get_post( int $id ) : ?\WP_Post {
-		return get_post( $id );
-	}
-
-	/**
-	 * Get posts.
-	 *
-	 * @param array $args Args.
-	 * @return array
-	 */
-	protected function get_posts( array $args ) : array {
-		return get_posts( $args );
-	}
+class Post extends AbstractPost {
 
 	/**
 	 * Find by id.

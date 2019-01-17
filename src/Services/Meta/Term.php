@@ -1,18 +1,16 @@
 <?php
 /**
- * Generic.
+ * Term.
  *
  * @package App
  */
 
-namespace App\Services\PostMeta;
-
-use App\Services\MetaInterface;
+namespace App\Services\Meta;
 
 /**
- * Generic class.
+ * Term class.
  */
-class Generic extends MetaInterface {
+class Term implements TermInterface {
 
 	/**
 	 * {@inheritDoc}
@@ -23,7 +21,7 @@ class Generic extends MetaInterface {
 	 * @return mixed
 	 */
 	public function get( int $id, string $key, bool $single = false ) {
-		return get_post_meta( $id, $key, $single );
+		return get_term_meta( $id, $key, $single );
 	}
 
 	/**
@@ -32,9 +30,10 @@ class Generic extends MetaInterface {
 	 * @param integer $id Id.
 	 * @param string  $key Key.
 	 * @param mixed   $value Value.
-	 * @return void
+	 * @return TermInterface
 	 */
-	public function set( int $id, string $key, $value ) {
-		update_post_meta( $id, $key, $value );
+	public function set( int $id, string $key, $value ) : TermInterface {
+		update_term_meta( $id, $key, $value );
+		return $this;
 	}
 }

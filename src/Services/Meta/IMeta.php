@@ -5,12 +5,12 @@
  * @package App
  */
 
-namespace App\Services;
+namespace App\Services\Meta;
 
 /**
  * Meta interface.
  */
-interface MetaInterface {
+interface IMeta {
 
 	/**
 	 * Get.
@@ -28,7 +28,7 @@ interface MetaInterface {
 	 * @param integer $id Id.
 	 * @param string  $key Key.
 	 * @param mixed   $value Value.
-	 * @return mixed
+	 * @return self
 	 */
-	public function set( int $id, string $key, $value );
+	public function set( int $id, string $key, $value ) : self;
 }

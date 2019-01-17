@@ -5,9 +5,7 @@
  * @package App
  */
 
-namespace App\Services\PostMeta;
-
-use App\Services\MetaInterface;
+namespace App\Services\Meta;
 
 /**
  * Service provider class.
@@ -15,12 +13,13 @@ use App\Services\MetaInterface;
 class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceProvider {
 
 	/**
-	 * Provides;
+	 * Provides.
 	 *
 	 * @var string[]
 	 */
 	protected $provides = [
-		MetaInterface::class,
+		PostInterface::class,
+		TermInterface::class,
 	];
 
 	/**
@@ -29,6 +28,7 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 	 * @return void
 	 */
 	public function register() {
-		$this->getContainer()->share( MetaInterface::class, Generic::class );
+		$this->getContainer()->share( PostInterface::class, Post::class );
+		$this->getContainer()->share( TermInterface::class, Term::class );
 	}
 }

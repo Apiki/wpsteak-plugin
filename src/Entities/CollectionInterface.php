@@ -34,6 +34,8 @@ interface CollectionInterface extends \Iterator, \ArrayAccess, \Countable {
 	/**
 	 * Build entity.
 	 *
+	 * You need to implement this method in your final class.
+	 *
 	 * @return EntityInterface
 	 */
 	public function build_entity() : EntityInterface;

@@ -5,6 +5,8 @@
  * @package App
  */
 
+declare(strict_types=1);
+
 namespace App\Repositories;
 
 use App\Services\Meta\TermInterface as MetaInterface;
@@ -19,7 +21,7 @@ abstract class AbstractTerm {
 	 *
 	 * @var MetaInterface
 	 */
-	private $meta;
+	protected $meta;
 
 	/**
 	 * Construct.
@@ -31,22 +33,34 @@ abstract class AbstractTerm {
 	}
 
 	/**
-	 * Get post.
+	 * Get term.
 	 *
 	 * @param integer $id Id.
-	 * @return \WP_Post|null
+	 * @return \WP_term
+	 * @throws \InvalidArgumentException When $id param is empty.
 	 */
-	protected function get_post( int $id ) : ?\WP_Post {
-		return get_post( $id );
+	protected function get_term( int $id ) {
+		if ( empty( $id ) ) {
+			throw new \InvalidArgumentException( __( 'Termo vazio.', 'wpsteak' ) );
+		}
+
+		return get_term( $id );
 	}
 
 	/**
-	 * Get posts.
+	 * Get terms.
 	 *
 	 * @param array $args Args.
-	 * @return array
+	 * @return \WP_Term[]
+	 * @throws \InvalidArgumentException When the passed taxonomy does not exists.
 	 */
-	protected function get_posts( array $args ) : array {
-		return get_posts( $args );
+	protected function get_terms( array $args ) : array {
+		$terms = get_terms( $args );
+
+		if ( is_wp_error( $terms ) ) {
+			throw new \InvalidArgumentException( __( 'Taxonomia não existe', 'wpsteak' ) );
+		}
+
+		return $terms;
 	}
 }

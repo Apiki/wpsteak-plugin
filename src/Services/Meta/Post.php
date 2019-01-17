@@ -5,6 +5,8 @@
  * @package App
  */
 
+declare(strict_types=1);
+
 namespace App\Services\Meta;
 
 /**
@@ -30,9 +32,10 @@ class Post implements PostInterface {
 	 * @param integer $id Id.
 	 * @param string  $key Key.
 	 * @param mixed   $value Value.
-	 * @return void
+	 * @return IMeta
 	 */
-	public function set( int $id, string $key, $value ) {
+	public function set( int $id, string $key, $value ) : IMeta {
 		update_post_meta( $id, $key, $value );
+		return $this;
 	}
 }

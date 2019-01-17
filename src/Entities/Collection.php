@@ -1,6 +1,6 @@
 <?php
 /**
- * Abstract collection.
+ * Collection.
  *
  * @package App
  */
@@ -10,9 +10,9 @@ declare(strict_types=1);
 namespace App\Entities;
 
 /**
- * Abstract collection class.
+ * Collection class.
  */
-abstract class AbstractCollection implements CollectionInterface {
+class Collection implements CollectionInterface {
 
 	use \DusanKasan\Knapsack\CollectionTrait;
 
@@ -29,38 +29,6 @@ abstract class AbstractCollection implements CollectionInterface {
 	 * @var integer
 	 */
 	private $position = 0;
-
-	/**
-	 * Add blueprint.
-	 *
-	 * @param array $properties Properties.
-	 * @return EntityInterface
-	 */
-	public function add_blueprint( array $properties ) : EntityInterface {
-		$instance = $this->build_entity();
-		$this->populate_entity( $instance, $properties );
-
-		$this->add_entity( $instance );
-
-		return $instance;
-	}
-
-	/**
-	 * Populate entity.
-	 *
-	 * @param EntityInterface $instance Instance.
-	 * @param array           $properties Properties.
-	 * @return void
-	 */
-	private function populate_entity( EntityInterface $instance, array $properties ) {
-		foreach ( $properties as $key => $value ) {
-			$method = "set_{$key}";
-
-			if ( method_exists( $instance, $method ) ) {
-				$instance->{$method}( $value );
-			}
-		}
-	}
 
 	/**
 	 * Add entity.

@@ -5,6 +5,8 @@
  * @package App
  */
 
+declare(strict_types=1);
+
 namespace App\Repositories;
 
 use App\Services\Meta\PostInterface as MetaInterface;
@@ -19,7 +21,7 @@ abstract class AbstractPost {
 	 *
 	 * @var MetaInterface
 	 */
-	private $meta;
+	protected $meta;
 
 	/**
 	 * Construct.
@@ -44,7 +46,7 @@ abstract class AbstractPost {
 	 * Get posts.
 	 *
 	 * @param array $args Args.
-	 * @return array
+	 * @return \WP_Post[]
 	 */
 	protected function get_posts( array $args ) : array {
 		return get_posts( $args );

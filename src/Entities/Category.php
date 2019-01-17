@@ -1,18 +1,20 @@
 <?php
 /**
- * Entity.
+ * Category.
  *
  * @package App
  */
 
-namespace App\Entities\Category;
+declare(strict_types=1);
+
+namespace App\Entities;
 
 use App\Entities\AbstractTerm;
 
 /**
- * Entity class.
+ * Category class.
  */
-class Entity extends AbstractTerm {
+class Category extends AbstractTerm {
 
 	/**
 	 * {@inheritDoc}

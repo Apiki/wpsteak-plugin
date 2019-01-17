@@ -1,18 +1,20 @@
 <?php
 /**
- * Entity.
+ * Post.
  *
  * @package App
  */
 
-namespace App\Entities\Post;
+declare(strict_types=1);
+
+namespace App\Entities;
 
 use App\Entities\AbstractPost;
 
 /**
- * Entity class.
+ * Post class.
  */
-class Entity extends AbstractPost {
+class Post extends AbstractPost {
 
 	/**
 	 * {@inheritDoc}

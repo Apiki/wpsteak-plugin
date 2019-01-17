@@ -1,6 +1,6 @@
 <?php
 /**
- * Abstract collection.
+ * Collection.
  *
  * @package App
  */
@@ -10,17 +10,9 @@ declare(strict_types=1);
 namespace App\Entities;
 
 /**
- * Abstract collection class.
+ * Collection interface.
  */
 interface CollectionInterface extends \Iterator, \ArrayAccess, \Countable {
-
-	/**
-	 * Add blueprint.
-	 *
-	 * @param array $properties Properties.
-	 * @return EntityInterface
-	 */
-	public function add_blueprint( array $properties ) : EntityInterface;
 
 	/**
 	 * Add entity.
@@ -30,13 +22,4 @@ interface CollectionInterface extends \Iterator, \ArrayAccess, \Countable {
 	 * @return void
 	 */
 	public function add_entity( EntityInterface $entity, $key = null );
-
-	/**
-	 * Build entity.
-	 *
-	 * You need to implement this method in your final class.
-	 *
-	 * @return EntityInterface
-	 */
-	public function build_entity() : EntityInterface;
 }

@@ -5,6 +5,8 @@
  * @package App
  */
 
+declare(strict_types=1);
+
 namespace App\Services\Meta;
 
 /**
@@ -30,9 +32,9 @@ class Term implements TermInterface {
 	 * @param integer $id Id.
 	 * @param string  $key Key.
 	 * @param mixed   $value Value.
-	 * @return TermInterface
+	 * @return IMeta
 	 */
-	public function set( int $id, string $key, $value ) : TermInterface {
+	public function set( int $id, string $key, $value ) : IMeta {
 		update_term_meta( $id, $key, $value );
 		return $this;
 	}

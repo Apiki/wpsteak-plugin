@@ -7,8 +7,8 @@
 
 namespace App\Test\Repositories;
 
-use App\Entities\Post\Collection;
-use App\Entities\Post\Entity;
+use App\Entities\Collection;
+use App\Entities\Post as Entity;
 use App\Repositories\Post as Repository;
 
 /**

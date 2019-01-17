@@ -1,47 +1,19 @@
 <?php
 /**
- * Abstract collection test.
+ * Collection test.
  *
  * @package App\Test
  */
 
 namespace App\Test\Entities;
 
-use App\Entities\AbstractCollection as Collection;
+use App\Entities\Collection as Collection;
 use App\Entities\EntityInterface as Entity;
 
 /**
  * Abstract collection test class.
  */
 final class AbstractCollectionTest extends \PHPUnit\Framework\TestCase {
-
-	/**
-	 * Test add blueprint.
-	 *
-	 * @return void
-	 */
-	public function test_add_blueprint() {
-		$entity = \Mockery::mock( Entity::class );
-
-		$collection = \Mockery::mock( Collection::class )
-			->shouldAllowMockingProtectedMethods()
-			->makePartial();
-
-		$collection
-			->shouldReceive( 'build_entity' )
-			->andReturn( $entity );
-
-		$this->assertInstanceOf(
-			Entity::class,
-			$collection->add_blueprint(
-				[
-					'post_id'      => 0,
-					'user_id'      => 0,
-					'content_type' => 'recipe',
-				]
-			)
-		);
-	}
 
 	/**
 	 * Test foreach behavior for collection.

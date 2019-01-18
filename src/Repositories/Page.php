@@ -25,7 +25,7 @@ class Page extends AbstractPost {
 	public function find_by_id( int $id ) : ?Entity {
 		$post = $this->get_post( $id );
 
-		if ( ! $post ) {
+		if ( empty( $post ) ) {
 			return null;
 		}
 

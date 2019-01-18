@@ -26,7 +26,7 @@ class Category extends AbstractTerm {
 	public function find_by_id( int $id ) : ?Entity {
 		$term = $this->get_term( $id );
 
-		if ( ! $term ) {
+		if ( empty( $term ) ) {
 			return null;
 		}
 

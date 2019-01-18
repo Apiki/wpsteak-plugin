@@ -36,7 +36,7 @@ abstract class AbstractTerm {
 	 * Get term.
 	 *
 	 * @param integer $id Id.
-	 * @return \WP_term
+	 * @return \WP_Error|\WP_term|array
 	 * @throws \InvalidArgumentException When $id param is empty.
 	 */
 	protected function get_term( int $id ) {
@@ -51,7 +51,7 @@ abstract class AbstractTerm {
 	 * Get terms.
 	 *
 	 * @param array $args Args.
-	 * @return \WP_Term[]
+	 * @return \WP_Error|\WP_Term[]
 	 * @throws \InvalidArgumentException When the passed taxonomy does not exists.
 	 */
 	protected function get_terms( array $args ) : array {

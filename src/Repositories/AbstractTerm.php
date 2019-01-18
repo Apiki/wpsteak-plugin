@@ -36,12 +36,12 @@ abstract class AbstractTerm {
 	 * Get term.
 	 *
 	 * @param integer $id Id.
-	 * @return \WP_Error|\WP_term|array
+	 * @return \WP_Term|null
 	 * @throws \InvalidArgumentException When $id param is empty.
 	 */
-	protected function get_term( int $id ) {
+	protected function get_term( int $id ) : \WP_Term {
 		if ( empty( $id ) ) {
-			throw new \InvalidArgumentException( __( 'Termo vazio.', 'wpsteak' ) );
+			throw new \InvalidArgumentException( __( 'Parâmetro id invalido.', 'wpsteak' ) );
 		}
 
 		return get_term( $id );
@@ -51,14 +51,14 @@ abstract class AbstractTerm {
 	 * Get terms.
 	 *
 	 * @param array $args Args.
-	 * @return \WP_Error|array
+	 * @return array
 	 * @throws \InvalidArgumentException When the passed taxonomy does not exists.
 	 */
 	protected function get_terms( array $args ) : array {
 		$terms = get_terms( $args );
 
-		if ( is_wp_error( $terms ) ) {
-			throw new \InvalidArgumentException( __( 'Taxonomia não existe', 'wpsteak' ) );
+		if ( ! is_array( $terms ) ) {
+			throw new \InvalidArgumentException( __( 'Taxonomia não existe.', 'wpsteak' ) );
 		}
 
 		return $terms;

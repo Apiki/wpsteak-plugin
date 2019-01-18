@@ -4,24 +4,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Steak 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
-"POT-Creation-Date: 2019-01-17 23:19:45+00:00\n"
+"POT-Creation-Date: 2019-01-18 01:32:06+00:00\n"
+"PO-Revision-Date: 2019-01-17 23:32-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-01-17 21:57-0200\n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.2\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en_US\n"
 
 #: src/Repositories/AbstractTerm.php:44
-msgid "Termo vazio."
-msgstr "Empty term."
+msgid "Parâmetro id invalido."
+msgstr ""
 
 #: src/Repositories/AbstractTerm.php:61
-msgid "Taxonomia não existe"
-msgstr "Taxonomy does not exist"
+msgid "Taxonomia não existe."
+msgstr "Taxonomy does not exist."
 
 #. translators: %s label plural lower.
 #: src/Services/Labels/Common.php:33
@@ -203,3 +203,6 @@ msgstr "Apiki"
 #. Author URI of the plugin/theme
 msgid "https://apiki.com/"
 msgstr "https://apiki.com/"
+
+#~ msgid "Termo vazio."
+#~ msgstr "Empty term."

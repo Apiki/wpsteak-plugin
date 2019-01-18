@@ -39,7 +39,7 @@ abstract class AbstractTerm {
 	 * @return \WP_Term|null
 	 * @throws \InvalidArgumentException When $id param is empty.
 	 */
-	protected function get_term( int $id ) : \WP_Term {
+	protected function get_term( int $id ) : ?\WP_Term {
 		if ( empty( $id ) ) {
 			throw new \InvalidArgumentException( __( 'Parâmetro id invalido.', 'wpsteak' ) );
 		}

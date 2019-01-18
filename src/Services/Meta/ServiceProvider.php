@@ -32,11 +32,11 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 	 */
 	public function register() {
 		$this->getContainer()
-			// @scrutinizer ignore-call
-			->share( PostInterface::class, Post::class );
+			->// @scrutinizer ignore-call
+			share( PostInterface::class, Post::class );
 
 		$this->getContainer()
-			// @scrutinizer ignore-call
-			->share( TermInterface::class, Term::class );
+			->// @scrutinizer ignore-call
+			share( TermInterface::class, Term::class );
 	}
 }

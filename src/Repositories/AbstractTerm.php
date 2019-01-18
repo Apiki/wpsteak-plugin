@@ -51,7 +51,7 @@ abstract class AbstractTerm {
 	 * Get terms.
 	 *
 	 * @param array $args Args.
-	 * @return \WP_Error|\WP_Term[]
+	 * @return \WP_Error|array
 	 * @throws \InvalidArgumentException When the passed taxonomy does not exists.
 	 */
 	protected function get_terms( array $args ) : array {

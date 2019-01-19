@@ -9,8 +9,5 @@
 /.vscode
 /README.md
 /makefile
-/phpcs.xml.dist export-ignore
-/phpunit.xml export-ignore
-/phpunit.xml.dist export-ignore
 /renovate.json
 /tests export-ignore

@@ -1,6 +1,6 @@
 <?php
 /**
- * Labels Post Type.
+ * Post Type.
  *
  * @package App
  */
@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace App\Services\Labels;
 
 /**
- * Labels Post Type trait.
+ * Post Type trait.
  */
 trait PostType {
 

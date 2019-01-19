@@ -39,7 +39,7 @@ abstract class AbstractPost implements PostInterface {
 	 * {@inheritDoc}
 	 *
 	 * @param \WP_Post $value Post.
-	 * @return self
+	 * @return PostInterface
 	 */
 	public function set_post( \WP_Post $value ) : PostInterface {
 		$this->post = $value;

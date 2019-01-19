@@ -1,6 +1,6 @@
 <?php
 /**
- * Labels trait.
+ * Commom.
  *
  * @package App
  */
@@ -10,9 +10,10 @@ declare(strict_types=1);
 namespace App\Services\Labels;
 
 /**
- * Labels trait.
+ * Commom trait.
  */
 trait Common {
+
 	/**
 	 * Get default labels.
 	 *

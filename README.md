@@ -14,32 +14,54 @@ http://wpsteak-api.surge.sh/master/
 1. Browse to `wp-content/plugins`.
 1. Run `composer create-project apiki/wpsteak-plugin your-plugin-name`.
 ## Directory structure
-```
+```shell
 .
-├── dist/                          # Bundles, optimized images etc.
-├── languages/                     # Language files.
-├── resources/                     # Build process configuration, Scripts, Styles, etc.
-├── src/                           # PSR-4 autoloaded classes.
-│   ├── Entities/                  # Classes for using on data mapper.
-│   │   ├── AbstractCollection.php
+├── dist/                            # Bundles, optimized images etc.
+├── languages/                       # Language files.
+├── resources/                       # Build process configuration, Scripts, Styles, etc.
+├── src/                             # PSR-4 autoloaded classes.
+│   ├── Entities/                    # Classes for using on data mapper.
 │   │   ├── AbstractPost.php
 │   │   ├── AbstractTerm.php
+│   │   ├── Category.php
 │   │   ├── CollectionInterface.php
+│   │   ├── Collection.php
 │   │   ├── EntityInterface.php
+│   │   ├── Page.php
 │   │   ├── PostInterface.php
+│   │   ├── Post.php
+│   │   ├── Tag.php
 │   │   └── TermInterface.php
-│   ├── Loggers/                   # Classes for handle log.
+│   ├── Loggers/                     # Classes for handle log.
 │   │   └── WordPress.php
-│   ├── Providers/                 # Your hooks declarations.
+│   ├── Providers/                   # Your hooks declarations.
 │   │   ├── AbstractPostType.php
 │   │   ├── AbstractTaxonomy.php
 │   │   └── Assets.php
-│   ├── Repositories/              # Where you put your data handle (includes API).
-│   ├── Services/                  # Where your business logic goes on.
-│   └── Widgets/                   # Widget classes.
-├── tests/                         # PHP Unit tests.
-├── views/                         # View files used for metaboxes, shortcodes, etc.
+│   ├── Repositories/                # Where you put your data handle (includes API).
+│   │   ├── AbstractPost.php
+│   │   ├── AbstractTerm.php
+│   │   ├── Category.php
+│   │   ├── Page.php
+│   │   ├── Post.php
+│   │   └── Tag.php
+│   ├── Services/                    # Where your business logic goes on.
+│   │   ├── Labels/
+│   │   │   ├── Common.php
+│   │   │   ├── PostType.php
+│   │   │   └── Taxonomy.php
+│   │   ├── Meta/
+│   │   │   ├── IMeta.php
+│   │   │   ├── PostInterface.php
+│   │   │   ├── Post.php
+│   │   │   ├── ServiceProvider.php
+│   │   │   ├── TermInterface.php
+│   │   │   └── Term.php
+│   │   └── Assets.php
+│   └── Widgets/                     # Widget classes.
+├── tests/                           # PHP Unit tests.
+├── views/                           # View files used for metaboxes, shortcodes, etc.
 ├── config.json.dist
-├── config.php                     # Where your providers and services providers will be loaded.
-└── wpsteak.php                    # Bootstrap plugin.
+├── config.php                       # Where your providers and services providers will be loaded.
+└── wpsteak.php                      # Bootstrap plugin.
 ```

@@ -1,6 +1,6 @@
 /.gitattributes export-ignore
 /.sami.php export-ignore
 /.travis.yml export-ignore
-/README.md
-/makefile
-/renovate.json
+/README.md export-ignore
+/makefile export-ignore
+/renovate.json export-ignore

@@ -47,7 +47,7 @@
     "browser-sync-webpack-plugin": "2.2.2",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.1.0",
-    "eslint-plugin-import": "2.15.0",
+    "eslint-plugin-import": "2.16.0",
     "eslint-plugin-jsx-a11y": "6.2.0",
     "eslint-plugin-react": "7.12.4",
     "node-wp-i18n": "1.2.2",

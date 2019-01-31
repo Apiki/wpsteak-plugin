@@ -11,6 +11,8 @@ namespace App\Loggers;
 
 /**
  * WordPress class.
+ *
+ * @codeCoverageIgnore
  */
 class WordPress extends \Psr\Log\AbstractLogger {
 

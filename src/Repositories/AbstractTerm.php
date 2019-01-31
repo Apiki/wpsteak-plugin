@@ -13,6 +13,8 @@ use App\Services\Meta\TermInterface as MetaInterface;
 
 /**
  * Abstract term class.
+ *
+ * @codeCoverageIgnore
  */
 abstract class AbstractTerm {
 

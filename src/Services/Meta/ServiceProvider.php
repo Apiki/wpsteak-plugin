@@ -11,6 +11,8 @@ namespace App\Services\Meta;
 
 /**
  * Service provider class.
+ *
+ * @codeCoverageIgnore
  */
 class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceProvider {
 

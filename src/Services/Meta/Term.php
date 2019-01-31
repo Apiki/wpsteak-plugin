@@ -11,6 +11,8 @@ namespace App\Services\Meta;
 
 /**
  * Term class.
+ *
+ * @codeCoverageIgnore
  */
 class Term implements TermInterface {
 

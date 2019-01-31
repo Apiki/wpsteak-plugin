@@ -11,6 +11,8 @@ namespace App\Services\Labels;
 
 /**
  * Post Type trait.
+ *
+ * @codeCoverageIgnore
  */
 trait PostType {
 

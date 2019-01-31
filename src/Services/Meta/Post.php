@@ -11,6 +11,8 @@ namespace App\Services\Meta;
 
 /**
  * Post class.
+ *
+ * @codeCoverageIgnore
  */
 class Post implements PostInterface {
 

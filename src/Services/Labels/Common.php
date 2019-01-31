@@ -11,6 +11,8 @@ namespace App\Services\Labels;
 
 /**
  * Commom trait.
+ *
+ * @codeCoverageIgnore
  */
 trait Common {
 

@@ -13,6 +13,8 @@ use App\Services\Meta\PostInterface as MetaInterface;
 
 /**
  * Abstract post class.
+ *
+ * @codeCoverageIgnore
  */
 abstract class AbstractPost {
 

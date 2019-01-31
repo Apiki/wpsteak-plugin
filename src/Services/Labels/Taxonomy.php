@@ -11,6 +11,8 @@ namespace App\Services\Labels;
 
 /**
  * Taxonomy trait.
+ *
+ * @codeCoverageIgnore
  */
 trait Taxonomy {
 

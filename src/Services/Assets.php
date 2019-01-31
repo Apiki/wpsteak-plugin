@@ -12,6 +12,8 @@ namespace App\Services;
 
 /**
  * Assets trait.
+ *
+ * @codeCoverageIgnore
  */
 trait Assets {
 	/**

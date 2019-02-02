@@ -9,12 +9,13 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Services;
+use WPSteak\Providers\AbstractHookProvider;
+use WPSteak\Services;
 
 /**
  * Assets class.
  */
-class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
+class Assets extends AbstractHookProvider {
 
 	use Services\Assets;
 
@@ -37,7 +38,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	 */
 	protected function register_theme_assets() {
 		$this->enqueue_script(
-			'wpsteak-theme-js',
+			'app-theme-js',
 			$this->plugin->get_url( 'dist/theme.js' ),
 			$this->plugin->get_path( 'dist/theme.js' ),
 			[ 'jquery', 'wp-i18n' ],
@@ -45,7 +46,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 		);
 
 		$this->enqueue_style(
-			'wpsteak-theme-css',
+			'app-theme-css',
 			$this->plugin->get_url( 'dist/styles/theme.css' ),
 			$this->plugin->get_path( 'dist/styles/theme.css' )
 		);
@@ -58,7 +59,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	 */
 	protected function register_admin_assets() {
 		$this->enqueue_script(
-			'wpsteak-admin-js',
+			'app-admin-js',
 			$this->plugin->get_url( 'dist/admin.js' ),
 			$this->plugin->get_path( 'dist/admin.js' ),
 			[ 'jquery', 'wp-i18n' ],
@@ -66,7 +67,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 		);
 
 		$this->enqueue_style(
-			'wpsteak-admin-css',
+			'app-admin-css',
 			$this->plugin->get_url( 'dist/styles/admin.css' ),
 			$this->plugin->get_path( 'dist/styles/admin.css' )
 		);
@@ -81,7 +82,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	 */
 	protected function register_login_assets() {
 		$this->enqueue_script(
-			'wpsteak-login-js',
+			'app-login-js',
 			$this->plugin->get_url( 'dist/login.js' ),
 			$this->plugin->get_path( 'dist/login.js' ),
 			[ 'jquery' ],
@@ -89,7 +90,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 		);
 
 		$this->enqueue_style(
-			'wpsteak-login-css',
+			'app-login-css',
 			$this->plugin->get_url( 'dist/styles/login.css' ),
 			$this->plugin->get_path( 'dist/styles/login.css' )
 		);
@@ -102,7 +103,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 	 */
 	protected function register_editor_assets() {
 		$this->enqueue_script(
-			'wpsteak-editor-js',
+			'app-editor-js',
 			$this->plugin->get_url( 'dist/editor.js' ),
 			$this->plugin->get_path( 'dist/editor.js' ),
 			[ 'wp-blocks', 'wp-element', 'wp-i18n' ],
@@ -110,7 +111,7 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 		);
 
 		$this->enqueue_style(
-			'wpsteak-editor-css',
+			'app-editor-css',
 			$this->plugin->get_url( 'dist/styles/editor.css' ),
 			$this->plugin->get_path( 'dist/styles/editor.css' )
 		);
@@ -126,6 +127,6 @@ class Assets extends \Cedaro\WP\Plugin\AbstractHookProvider {
 			return;
 		}
 
-		wp_set_script_translations( 'wpsteak-admin-js-bundle', $this->plugin->get_slug(), $this->plugin->get_path( 'languages' ) );
+		wp_set_script_translations( 'app-admin-js-bundle', $this->plugin->get_slug(), $this->plugin->get_path( 'languages' ) );
 	}
 }

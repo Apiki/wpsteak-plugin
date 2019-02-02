@@ -9,8 +9,9 @@ declare(strict_types=1);
 
 namespace App\Repositories;
 
-use App\Entities\Collection;
 use App\Entities\Post as Entity;
+use WPSteak\Entities\Collection;
+use WPSteak\Repositories\AbstractPost;
 
 /**
  * Post class.
@@ -18,13 +19,13 @@ use App\Entities\Post as Entity;
 class Post extends AbstractPost {
 
 	/**
-	 * Find by id.
+	 * Find one.
 	 *
-	 * @param integer $id Id.
+	 * @param \WP_Post|int $post The post object or id.
 	 * @return Entity|null
 	 */
-	public function find_by_id( int $id ) : ?Entity {
-		$post = $this->get_post( $id );
+	public function find_one( $post ) : ?Entity {
+		$post = $this->get_post( $post );
 
 		if ( empty( $post ) ) {
 			return null;

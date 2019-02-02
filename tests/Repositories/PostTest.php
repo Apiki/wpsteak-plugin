@@ -7,9 +7,9 @@
 
 namespace App\Test\Repositories;
 
-use App\Entities\Collection;
 use App\Entities\Post as Entity;
 use App\Repositories\Post as Repository;
+use WPSteak\Entities\Collection;
 
 /**
  * Post test class.
@@ -21,7 +21,7 @@ final class PostTest extends \PHPUnit\Framework\TestCase {
 	 *
 	 * @return void
 	 */
-	public function test_find_by_id_fail() {
+	public function test_find_one_fail() {
 		$repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
 			->setMethods( [ 'get_post' ] )
@@ -30,7 +30,7 @@ final class PostTest extends \PHPUnit\Framework\TestCase {
 		$repository->method( 'get_post' )
 			->will( $this->returnValue( null ) );
 
-		$entity = $repository->find_by_id( 0 );
+		$entity = $repository->find_one( 0 );
 
 		$this->assertNull( $entity );
 	}
@@ -40,7 +40,7 @@ final class PostTest extends \PHPUnit\Framework\TestCase {
 	 *
 	 * @return void
 	 */
-	public function test_find_by_id_success() {
+	public function test_find_one_success() {
 		$post       = $this->getMockBuilder( 'WP_Post' )->getMock();
 		$repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
@@ -50,7 +50,7 @@ final class PostTest extends \PHPUnit\Framework\TestCase {
 		$repository->method( 'get_post' )
 			->will( $this->returnValue( $post ) );
 
-		$entity = $repository->find_by_id( 1 );
+		$entity = $repository->find_one( 1 );
 
 		$this->assertInstanceOf( Entity::class, $entity );
 	}

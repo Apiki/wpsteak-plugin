@@ -9,8 +9,9 @@ declare(strict_types=1);
 
 namespace App\Repositories;
 
-use App\Entities\Collection;
 use App\Entities\Tag as Entity;
+use WPSteak\Entities\Collection;
+use WPSteak\Repositories\AbstractTerm;
 
 /**
  * Tag class.
@@ -18,13 +19,13 @@ use App\Entities\Tag as Entity;
 class Tag extends AbstractTerm {
 
 	/**
-	 * Find by id.
+	 * Find one.
 	 *
-	 * @param integer $id Id.
+	 * @param \WP_Term|int $term The term object or id.
 	 * @return Entity|null
 	 */
-	public function find_by_id( int $id ) : ?Entity {
-		$term = $this->get_term( $id );
+	public function find_one( $term ) : ?Entity {
+		$term = $this->get_term( $term );
 
 		if ( empty( $term ) ) {
 			return null;

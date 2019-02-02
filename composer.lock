@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65775908575be2785c3823846a7de139",
+    "content-hash": "d1b28aff147621769d198a1adf74ada5",
     "packages": [
+        {
+            "name": "apiki/wpsteak",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/var/www/amb-cms/web/app/plugins/wpsteak",
+                "reference": "e5648ea33dfe7e9e5cee4f86306e5c2162784e11",
+                "shasum": null
+            },
+            "require": {
+                "cedaro/wp-plugin": "0.4.0",
+                "dusank/knapsack": "10.0.0",
+                "php": ">=7.1",
+                "psr/log": "1.1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
+                "mockery/mockery": "1.2.0",
+                "phpcompatibility/phpcompatibility-wp": "2.0.0",
+                "phpunit/phpunit": "7.5.3",
+                "squizlabs/php_codesniffer": "3.4.0",
+                "wp-coding-standards/wpcs": "2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WPSteak\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "WPSteak\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "install-codestandards": [
+                    "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+                ],
+                "lint": [
+                    "phpcs"
+                ],
+                "lint:fix": [
+                    "phpcbf"
+                ],
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "description": "Some patterns for build your own structured WordPress plugin."
+        },
         {
             "name": "cedaro/wp-plugin",
             "version": "v0.4.0",
@@ -2141,7 +2194,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -2293,7 +2346,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "apiki/wpsteak": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -7,9 +7,9 @@
 
 namespace App\Test\Repositories;
 
-use App\Entities\Collection;
 use App\Entities\Category as Entity;
 use App\Repositories\Category as Repository;
+use WPSteak\Entities\Collection;
 
 /**
  * Category test class.
@@ -21,7 +21,7 @@ final class CategoryTest extends \PHPUnit\Framework\TestCase {
 	 *
 	 * @return void
 	 */
-	public function test_find_by_id_fail() {
+	public function test_find_one_fail() {
 		$repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
 			->setMethods( [ 'get_term' ] )
@@ -30,7 +30,7 @@ final class CategoryTest extends \PHPUnit\Framework\TestCase {
 		$repository->method( 'get_term' )
 			->will( $this->returnValue( null ) );
 
-		$entity = $repository->find_by_id( 0 );
+		$entity = $repository->find_one( 0 );
 
 		$this->assertNull( $entity );
 	}
@@ -40,7 +40,7 @@ final class CategoryTest extends \PHPUnit\Framework\TestCase {
 	 *
 	 * @return void
 	 */
-	public function test_find_by_id_success() {
+	public function test_find_one_success() {
 		$term       = $this->getMockBuilder( 'WP_Term' )->getMock();
 		$repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
@@ -50,7 +50,7 @@ final class CategoryTest extends \PHPUnit\Framework\TestCase {
 		$repository->method( 'get_term' )
 			->will( $this->returnValue( $term ) );
 
-		$entity = $repository->find_by_id( 1 );
+		$entity = $repository->find_one( 1 );
 
 		$this->assertInstanceOf( Entity::class, $entity );
 	}

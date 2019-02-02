@@ -13,8 +13,8 @@
     "lint-fix:scripts": "eslint --color --fix ./resources/scripts/**",
     "lint-fix:styles": "stylelint --color --fix ./resources/styles/**",
     "i18n": "run-s -cl i18n:textdomain i18n:pot",
-    "i18n:textdomain": "wpi18n addtextdomain --exclude=api-reference,dist,node_modules,resources,tests,vendor",
-    "i18n:pot": "wpi18n makepot --exclude=api-reference,dist,node_modules,resources,tests,vendor"
+    "i18n:textdomain": "wpi18n addtextdomain --exclude=dist,node_modules,resources,tests,vendor",
+    "i18n:pot": "wpi18n makepot --exclude=dist,node_modules,resources,tests,vendor"
   },
   "dependencies": {
     "@babel/core": "7.2.2",

@@ -7,16 +7,13 @@
 /config.json
 
 # Build modules
-node_modules/
+/node_modules/
 
 # Yarn
 /yarn-error.log
 
 # Composer packages
 /vendor/
-
-# sami docs
-api-reference/
 
 # PHPCS
 /phpcs.xml
@@ -26,10 +23,7 @@ api-reference/
 /tests/_reports
 
 # NPM lockfile as it causes more problems than it solves
-package-lock.json
-
-# Sami
-/sami.phar
+/package-lock.json
 
 # Common
 .DS_Store

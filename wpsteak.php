@@ -9,7 +9,7 @@
  * Version: 0.1.0
  * Author: Apiki
  * Author URI: https://apiki.com/
- * Text Domain: wpsteak
+ * Text Domain: app
  * Domain Path: /languages
  * Requires PHP: 7.1
  */
@@ -46,6 +46,7 @@ $plugin = wpsteak();
 
 $plugin->set_container( $container );
 $plugin->register_hooks( $container->get( Cedaro\WP\Plugin\Provider\I18n::class ) );
+$plugin->register_hooks( $container->get( WPSteak\Providers\I18n::class ) );
 
 $config = ( require __DIR__ . '/config.php' );
 

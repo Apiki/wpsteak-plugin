@@ -1,0 +1,169 @@
+# Copyright (C) 2019 Apiki
+# This file is distributed under the same license as the WP Steak package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Steak 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
+"POT-Creation-Date: 2019-02-02 02:47:11+00:00\n"
+"PO-Revision-Date: 2019-02-02 00:47-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Providers/Example/PostMeta.php:62
+msgid "Endereço."
+msgstr "Address line."
+
+#: src/Providers/Example/PostMeta.php:75
+msgid "Data"
+msgstr "Data"
+
+#: src/Providers/Example/PostType.php:31
+msgid "Exemplo"
+msgstr "Example"
+
+#: src/Providers/Example/PostType.php:32
+msgid "Exemplos"
+msgstr "Examples"
+
+#: views/meta-box-data.php:9
+msgid "Endereço:"
+msgstr "Address line:"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Steak"
+msgstr "WP Steak"
+
+#. Description of the plugin/theme
+msgid "A fully structured plugin."
+msgstr "A fully structured plugin."
+
+#. Author of the plugin/theme
+msgid "Apiki"
+msgstr "Apiki"
+
+#. Author URI of the plugin/theme
+msgid "https://apiki.com/"
+msgstr "https://apiki.com/"
+
+#~ msgid "Taxonomia não existe."
+#~ msgstr "Taxonomy does not exist."
+
+#~ msgid "Todas %s"
+#~ msgid_plural "Todos %s"
+#~ msgstr[0] "All %s"
+#~ msgstr[1] "All %s"
+
+#~ msgid "Editar %s"
+#~ msgstr "Edit %s"
+
+#~ msgid "Ver %s"
+#~ msgstr "See %s"
+
+#~ msgid "Adicionar nova %s"
+#~ msgid_plural "Adicionar novo %s"
+#~ msgstr[0] "Add new %s"
+#~ msgstr[1] "Add new %s"
+
+#~ msgid "%s pai:"
+#~ msgstr "%s parent:"
+
+#~ msgid "Buscar %s"
+#~ msgstr "Search %s"
+
+#~ msgid "Nenhuma %s encontrada."
+#~ msgid_plural "Nenhum %s encontrado."
+#~ msgstr[0] "No %s found."
+#~ msgstr[1] "No %s found."
+
+#~ msgid "Adicionar nova"
+#~ msgid_plural "Adicionar novo"
+#~ msgstr[0] "Add new"
+#~ msgstr[1] "Add new"
+
+#~ msgid "Nova %s"
+#~ msgid_plural "Novo %s"
+#~ msgstr[0] "New %s"
+#~ msgstr[1] "New %s"
+
+#~ msgid "Nenhuma %s encontrada na Lixeira."
+#~ msgid_plural "Nenhum %s encontrado na Lixeira."
+#~ msgstr[0] "No %s found on trash."
+#~ msgstr[1] "No %s found on trash."
+
+#~ msgid "Arquivos de %s"
+#~ msgstr "Archive of %s"
+
+#~ msgid "Atributos de %s"
+#~ msgstr "Attributes of %s"
+
+#~ msgid "Inserir na %s"
+#~ msgid_plural "Inserir no %s"
+#~ msgstr[0] "Insert on %s"
+#~ msgstr[1] "Insert on %s"
+
+#~ msgid "Carregado para esta %s"
+#~ msgid_plural "Carregado para este %s"
+#~ msgstr[0] "Uploaded for this %s"
+#~ msgstr[1] "Uploaded for this %s"
+
+#~ msgid "Imagem destacada"
+#~ msgstr "Featured image"
+
+#~ msgid "Definir imagem destacada"
+#~ msgstr "Set featured image"
+
+#~ msgid "Remover imagem destacada"
+#~ msgstr "Remove featured image"
+
+#~ msgid "Usar como imagem destacada"
+#~ msgstr "Use as a featured image"
+
+#~ msgid "Filtrar lista de %s"
+#~ msgstr "Filter %s list"
+
+#~ msgid "Navegação da lista de %s"
+#~ msgstr "%s list navigation"
+
+#~ msgid "Lista de %s"
+#~ msgstr "%s list"
+
+#~ msgid "Atualizar %s"
+#~ msgstr "Update %s"
+
+#~ msgid "Nome da nova %s"
+#~ msgid_plural "Nome do novo %s"
+#~ msgstr[0] "%s name"
+#~ msgstr[1] "%s name"
+
+#~ msgid "%s pai"
+#~ msgstr "%s parent"
+
+#~ msgid "%s populares"
+#~ msgstr "Popular %s"
+
+#~ msgid "Separe as %s com virgulas"
+#~ msgid_plural "Separe os %s com virgulas"
+#~ msgstr[0] "Separate %s with comma"
+#~ msgstr[1] "Separate %s with comma"
+
+#~ msgid "Adicionar ou remover %s"
+#~ msgstr "Add or remove %s"
+
+#~ msgid "Escolher entre as %s mais usadas"
+#~ msgid_plural "Escolher entre os %s mais usados"
+#~ msgstr[0] "Choose from the most used %s"
+#~ msgstr[1] "Choose from the most used %s"
+
+#~ msgid "Voltar para as %s"
+#~ msgid_plural "Voltar para os %s"
+#~ msgstr[0] "Back to %s"
+#~ msgstr[1] "Back to %s"
+
+#~ msgid "Termo vazio."
+#~ msgstr "Empty term."

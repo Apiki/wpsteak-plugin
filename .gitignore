@@ -19,6 +19,7 @@
 /phpcs.xml
 
 # PHPUnit
+/.phpunit.result.cache
 /phpunit.xml
 /tests/_reports
 

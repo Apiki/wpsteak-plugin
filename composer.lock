@@ -4,33 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8be019b5b9b944c8e5dcc3b4499de21d",
+    "content-hash": "9eaf4a71aa19196fac4afb02407bcc6b",
     "packages": [
         {
             "name": "apiki/wpsteak",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Apiki/wpsteak.git",
-                "reference": "55f8af1f1a16347cf36edb8d01ea5b5e58e5a676"
+                "reference": "401fc7ff65e3534ff47215cc3e5b34764dacf7c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/55f8af1f1a16347cf36edb8d01ea5b5e58e5a676",
-                "reference": "55f8af1f1a16347cf36edb8d01ea5b5e58e5a676",
+                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/401fc7ff65e3534ff47215cc3e5b34764dacf7c8",
+                "reference": "401fc7ff65e3534ff47215cc3e5b34764dacf7c8",
                 "shasum": ""
             },
             "require": {
                 "cedaro/wp-plugin": "0.4.0",
                 "dusank/knapsack": "10.0.0",
-                "php": ">=7.1",
+                "php": ">=7.2",
                 "psr/log": "1.1.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
                 "mockery/mockery": "1.2.0",
                 "phpcompatibility/phpcompatibility-wp": "2.0.0",
-                "phpunit/phpunit": "7.5.3",
+                "phpunit/phpunit": "8.0.0",
                 "squizlabs/php_codesniffer": "3.4.0",
                 "wp-coding-standards/wpcs": "2.0.0"
             },
@@ -45,7 +45,7 @@
                 "GPL-2.0-only"
             ],
             "description": "Some patterns for build your own structured WordPress plugin.",
-            "time": "2019-02-02T02:57:59+00:00"
+            "time": "2019-02-02T20:07:41+00:00"
         },
         {
             "name": "cedaro/wp-plugin",
@@ -2338,9 +2338,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "apiki/wpsteak": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -4,16 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1b28aff147621769d198a1adf74ada5",
+    "content-hash": "dad03bd75994b75af49667ef21f66a08",
     "packages": [
         {
             "name": "apiki/wpsteak",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Apiki/wpsteak.git",
+                "reference": "55f8af1f1a16347cf36edb8d01ea5b5e58e5a676"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/amb-cms/web/app/plugins/wpsteak",
-                "reference": "e5648ea33dfe7e9e5cee4f86306e5c2162784e11",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/55f8af1f1a16347cf36edb8d01ea5b5e58e5a676",
+                "reference": "55f8af1f1a16347cf36edb8d01ea5b5e58e5a676",
+                "shasum": ""
             },
             "require": {
                 "cedaro/wp-plugin": "0.4.0",
@@ -35,29 +40,12 @@
                     "WPSteak\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "WPSteak\\Test\\": "tests/"
-                }
-            },
-            "scripts": {
-                "install-codestandards": [
-                    "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-                ],
-                "lint": [
-                    "phpcs"
-                ],
-                "lint:fix": [
-                    "phpcbf"
-                ],
-                "test": [
-                    "phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-only"
             ],
-            "description": "Some patterns for build your own structured WordPress plugin."
+            "description": "Some patterns for build your own structured WordPress plugin.",
+            "time": "2019-02-02T02:57:59+00:00"
         },
         {
             "name": "cedaro/wp-plugin",

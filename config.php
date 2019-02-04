@@ -11,7 +11,7 @@
 
 return [
 	'service_providers' => [
-		WPSteak\Services\Meta\ServiceProvider::class,
+		App\Services\Meta\ServiceProvider::class,
 	],
 	'hook_providers'    => [
 		App\Providers\Assets::class,

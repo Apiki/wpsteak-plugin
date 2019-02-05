@@ -29,7 +29,7 @@ function wpsteak() {
 	static $instance;
 
 	if ( null === $instance ) {
-		$instance = PluginFactory::create( 'wpsteak' );
+		$instance = PluginFactory::create( 'app' );
 	}
 
 	return $instance;

@@ -14,7 +14,10 @@ return [
 		App\Services\Meta\ServiceProvider::class,
 	],
 	'hook_providers'    => [
-		App\Providers\Assets::class,
+		App\Providers\Assets\Admin::class,
+		App\Providers\Assets\Editor::class,
+		App\Providers\Assets\Login::class,
+		App\Providers\Assets\Theme::class,
 		App\Providers\Example\PostMeta::class,
 		App\Providers\Example\PostType::class,
 	],

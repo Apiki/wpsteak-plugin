@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace App\Services\Meta;
 
+use Carbon_Fields\Helper\Helper as CarbonHelper;
 use WPSteak\Services\Meta\IMeta;
 use WPSteak\Services\Meta\TermInterface;
 
@@ -20,6 +21,22 @@ use WPSteak\Services\Meta\TermInterface;
 class CarbonTerm implements TermInterface {
 
 	/**
+	 * Helper.
+	 *
+	 * @var CarbonHelper
+	 */
+	protected $helper;
+
+	/**
+	 * Construct.
+	 *
+	 * @param CarbonHelper $helper Helper.
+	 */
+	public function __construct( CarbonHelper $helper ) {
+		$this->helper = $helper;
+	}
+
+	/**
 	 * Get.
 	 *
 	 * @param integer $id Id.
@@ -28,7 +45,7 @@ class CarbonTerm implements TermInterface {
 	 * @return mixed
 	 */
 	public function get( int $id, string $key, bool $single = false ) {
-		return carbon_get_term_meta( $id, $key );
+		return $this->helper::get_term_meta( $id, $key );
 	}
 
 	/**
@@ -40,7 +57,7 @@ class CarbonTerm implements TermInterface {
 	 * @return IMeta
 	 */
 	public function set( int $id, string $key, $value ) : IMeta {
-		carbon_set_term_meta( $id, $key, $value );
+		$this->helper::set_term_meta( $id, $key, $value );
 		return $this;
 	}
 }

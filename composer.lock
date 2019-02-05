@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aac061ab086fb7f5e3c76d22a596a754",
+    "content-hash": "cace1d8a4b015d73cf6e63ee6c8f3385",
     "packages": [
         {
             "name": "apiki/wpsteak",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Apiki/wpsteak.git",
-                "reference": "401fc7ff65e3534ff47215cc3e5b34764dacf7c8"
+                "reference": "17fa0b14c1ee8b758d76654fbd2271ffa9c4095d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/401fc7ff65e3534ff47215cc3e5b34764dacf7c8",
-                "reference": "401fc7ff65e3534ff47215cc3e5b34764dacf7c8",
+                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/17fa0b14c1ee8b758d76654fbd2271ffa9c4095d",
+                "reference": "17fa0b14c1ee8b758d76654fbd2271ffa9c4095d",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
                 "mockery/mockery": "1.2.0",
                 "phpcompatibility/phpcompatibility-wp": "2.0.0",
-                "phpunit/phpunit": "8.0.0",
+                "phpunit/phpunit": "8.0.1",
                 "squizlabs/php_codesniffer": "3.4.0",
                 "wp-coding-standards/wpcs": "2.0.0"
             },
@@ -45,7 +45,7 @@
                 "GPL-2.0-only"
             ],
             "description": "Some patterns for build your own structured WordPress plugin.",
-            "time": "2019-02-02T20:07:41+00:00"
+            "time": "2019-02-04T11:25:46+00:00"
         },
         {
             "name": "cedaro/wp-plugin",

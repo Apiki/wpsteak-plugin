@@ -4,7 +4,6 @@
 const { ProvidePlugin, WatchIgnorePlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ManifestPlugin = require('webpack-manifest-plugin');
 
@@ -66,7 +65,6 @@ const plugins = [
   }),
   extractSass,
   spriteSmith,
-  new UglifyJSPlugin(),
   new ImageminPlugin({
     optipng: {
       optimizationLevel: 7,

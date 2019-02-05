@@ -7,12 +7,9 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Meta;
+namespace App\Services\CarbonFields;
 
-use WPSteak\Services\Meta\Post;
-use WPSteak\Services\Meta\PostInterface;
-use WPSteak\Services\Meta\Term;
-use WPSteak\Services\Meta\TermInterface;
+use Carbon_Fields\Helper\Helper as CarbonHelper;
 
 /**
  * Service provider class.
@@ -27,8 +24,7 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 	 * @var string[]
 	 */
 	protected $provides = [
-		PostInterface::class,
-		TermInterface::class,
+		CarbonHelper::class,
 	];
 
 	/**
@@ -39,9 +35,6 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 	 */
 	public function register() {
 		$this->getContainer()
-			->/* @scrutinizer ignore-call */ share( PostInterface::class, Post::class );
-
-		$this->getContainer()
-			->/* @scrutinizer ignore-call */ share( TermInterface::class, Term::class );
+			->/* @scrutinizer ignore-call */ share( CarbonHelper::class, CarbonHelper::class );
 	}
 }

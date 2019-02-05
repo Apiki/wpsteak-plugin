@@ -1,6 +1,6 @@
 <?php
 /**
- * Page.
+ * Example.
  *
  * @package App
  */
@@ -9,13 +9,14 @@ declare(strict_types=1);
 
 namespace App\Repositories;
 
-use App\Entities\Page as Entity;
+use App\Entities\Example as Entity;
+use WPSteak\Entities\Collection;
 use WPSteak\Repositories\AbstractPost;
 
 /**
- * Page class.
+ * Example class.
  */
-class Page extends AbstractPost {
+class Example extends AbstractPost {
 
 	/**
 	 * Find one.
@@ -30,6 +31,11 @@ class Page extends AbstractPost {
 			return null;
 		}
 
-		return ( new Entity() )->set_post( $post );
+		$entity = new Entity();
+		$entity
+			->set_address( $this->meta->get( (int) $post->ID, 'address', true ) )
+			->set_post( $post );
+
+		return $entity;
 	}
 }

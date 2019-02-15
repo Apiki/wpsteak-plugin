@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfebc368df1343867ee0243c3d12ccf1",
+    "content-hash": "f8e7e378975e8f84e4a8c84cfdd1dda0",
     "packages": [
         {
             "name": "apiki/wpsteak",
@@ -1441,16 +1441,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.0.2",
+            "version": "8.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d64e502503bcfab5d46c0b74ffd41f4986831dc7"
+                "reference": "651e95a71ff705faae24d18ef5e4c7c8c5050f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d64e502503bcfab5d46c0b74ffd41f4986831dc7",
-                "reference": "d64e502503bcfab5d46c0b74ffd41f4986831dc7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/651e95a71ff705faae24d18ef5e4c7c8c5050f9a",
+                "reference": "651e95a71ff705faae24d18ef5e4c7c8c5050f9a",
                 "shasum": ""
             },
             "require": {
@@ -1519,7 +1519,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-07T14:17:09+00:00"
+            "time": "2019-02-15T14:06:48+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

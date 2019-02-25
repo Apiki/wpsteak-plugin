@@ -1026,12 +1026,12 @@ after@0.8.2:
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
-airbnb-browser-shims@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/airbnb-browser-shims/-/airbnb-browser-shims-3.1.0.tgz#874ce8db5ccf6eae6514b9abffec450257768967"
-  integrity sha512-qujNmuSgtkIvEN8C2VEzNxocLSvKpfhlhiEP7Sp5jISa7WP+7ZjfaChkFO/I8pVI+A2BA7uqBMmBSmeQDGJTvQ==
+airbnb-browser-shims@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/airbnb-browser-shims/-/airbnb-browser-shims-3.2.0.tgz#e74fbb2d23afdc2374a77be7913bb7f5f9398c7e"
+  integrity sha512-IZwCHnqgfSZuV5aULKzgj0OinAhStv51sXLoM6PnBDHIHs8L/tmRredhUVEpXDpqw1lYrCtWyDo+24B1WnNDWg==
   dependencies:
-    airbnb-js-shims "^2.0.0"
+    airbnb-js-shims "^2.1.1"
     classlist-polyfill "^1.2.0"
     console-polyfill "^0.3.0"
     element-closest "^2.0.2"
@@ -1039,13 +1039,14 @@ airbnb-browser-shims@3.1.0:
     input-placeholder-polyfill "^1.0.0"
     intersection-observer "^0.5.1"
     matchmedia-polyfill "^0.3.1"
-    raf "^3.4.0"
+    raf "^3.4.1"
     ric-shim "^1.0.0"
+    shim-keyboard-event-key "^1.0.2"
     smoothscroll-polyfill "^0.3.6"
     whatwg-fetch "^0.11.1"
     window-location-origin "^0.1.0"
 
-airbnb-js-shims@^2.0.0:
+airbnb-js-shims@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/airbnb-js-shims/-/airbnb-js-shims-2.1.1.tgz#a509611480db7e6d9db62fe2acfaeb473b6842ac"
   integrity sha512-h8UtyB/TCdOwWoEPQJGHgsWwSnTqPrRZbhyZYjAwY9/AbjdjfkKy9L/T3fIFS6MKX8YrpWFRm6xqFSgU+2DRGw==
@@ -7558,7 +7559,7 @@ quote-stream@~0.0.0:
     minimist "0.0.8"
     through2 "~0.4.1"
 
-raf@^3.4.0:
+raf@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -8380,6 +8381,11 @@ shell-quote@^1.6.1:
     array-map "~0.0.0"
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
+
+shim-keyboard-event-key@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/shim-keyboard-event-key/-/shim-keyboard-event-key-1.0.2.tgz#ba7f9dd7e54a808475713479ab2d2f77e1cc138b"
+  integrity sha512-5USwMKqCQSnFyGu33yTZICf/jdwoPNysqrZLtZEnh010EAI7463+gaCuuvR9cCY1Emixvw/yh5c29qmSvNLn1g==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"

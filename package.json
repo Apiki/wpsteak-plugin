@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/core": "7.3.4",
     "@babel/preset-env": "7.3.4",
-    "airbnb-browser-shims": "3.2.0",
+    "airbnb-browser-shims": "3.2.1",
     "autoprefixer": "9.4.10",
     "babel-loader": "8.0.5",
     "clean-webpack-plugin": "1.0.1",

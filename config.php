@@ -19,6 +19,7 @@ return [
 		App\Providers\Assets\Editor::class,
 		App\Providers\Assets\Login::class,
 		App\Providers\Assets\Theme::class,
+		App\Providers\ExampleCategory\Taxonomy::class,
 		App\Providers\Example\PostMeta::class,
 		App\Providers\Example\PostType::class,
 	],

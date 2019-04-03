@@ -1,24 +1,33 @@
 # Copyright (C) 2019 Apiki
-# This file is distributed under the same license as the WP Steak package.
+# This file is distributed under the same license as the WP Steak plugin.
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Steak 2.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
-"POT-Creation-Date: 2019-02-04 15:18:35+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: node-wp-i18n 1.2.2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-04-03T18:43:59+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: app\n"
 
-#: src/Providers/Example/PostMeta.php:72
-msgid "Endereço."
+#. Plugin Name of the plugin
+msgid "WP Steak"
 msgstr ""
 
-#: src/Providers/Example/PostMeta.php:85
-msgid "Data"
+#. Description of the plugin
+msgid "A fully structured plugin."
+msgstr ""
+
+#. Author of the plugin
+msgid "Apiki"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://apiki.com/"
 msgstr ""
 
 #: src/Providers/Example/PostType.php:31
@@ -29,22 +38,22 @@ msgstr ""
 msgid "Exemplos"
 msgstr ""
 
+#: src/Providers/Example/PostMeta.php:72
+msgid "Endereço."
+msgstr ""
+
+#: src/Providers/Example/PostMeta.php:85
+msgid "Data"
+msgstr ""
+
+#: src/Providers/ExampleCategory/Taxonomy.php:32
+msgid "Categoria"
+msgstr ""
+
+#: src/Providers/ExampleCategory/Taxonomy.php:33
+msgid "Categorias"
+msgstr ""
+
 #: views/meta-box-data.php:9
 msgid "Endereço:"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-msgid "WP Steak"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid "A fully structured plugin."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Apiki"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://apiki.com/"
 msgstr ""

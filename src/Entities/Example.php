@@ -44,7 +44,7 @@ class Example extends AbstractPost {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Post Type.
 	 */
 	const POST_TYPE = 'example';
 }

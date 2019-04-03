@@ -52,9 +52,7 @@ const extractSass = new ExtractTextPlugin({
  * Setup webpack plugins.
  */
 const plugins = [
-  new CleanWebpackPlugin(utils.distPath(), {
-    root: utils.themeRootPath(),
-  }),
+  new CleanWebpackPlugin(),
   new WatchIgnorePlugin([
     utils.distImagesPath('sprite.png'),
     utils.distImagesPath('sprite@2x.png'),

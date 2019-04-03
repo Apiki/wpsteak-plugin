@@ -6,7 +6,7 @@
  *
  * Plugin Name: WP Steak
  * Description: A fully structured plugin.
- * Version: 2.0.0
+ * Version: 2.1.0
  * Author: Apiki
  * Author URI: https://apiki.com/
  * Text Domain: app

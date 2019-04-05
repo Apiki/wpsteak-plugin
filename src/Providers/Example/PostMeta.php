@@ -112,11 +112,6 @@ class PostMeta extends AbstractHookProvider {
 	protected function save( $post_id ) {
 		// @phpcs:ignore
 		$address = ! empty( $_POST['address'] ) ? sanitize_text_field( $_POST['address'] ) : '';
-
-		if ( empty( $address ) ) {
-			return;
-		}
-
 		update_post_meta( $post_id, 'address', $address );
 	}
 }

@@ -2,7 +2,7 @@
  * The external dependencies.
  */
 const { ProvidePlugin, WatchIgnorePlugin } = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 

@@ -42,7 +42,7 @@
     "webpack-spritesmith": "1.0.1"
   },
   "devDependencies": {
-    "browser-sync": "2.26.5",
+    "browser-sync": "2.26.7",
     "browser-sync-webpack-plugin": "2.2.2",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.1.0",

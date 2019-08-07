@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d2ee3d0e5d16026274f40a70d899236",
+    "content-hash": "66f03e27d213b745c9116f6875414930",
     "packages": [
         {
             "name": "apiki/wpsteak",
@@ -471,9 +471,9 @@
             "authors": [
                 {
                     "name": "Franck Nijhof",
+                    "role": "Developer / IT Manager",
                     "email": "franck.nijhof@dealerdirect.com",
-                    "homepage": "http://www.frenck.nl",
-                    "role": "Developer / IT Manager"
+                    "homepage": "http://www.frenck.nl"
                 }
             ],
             "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
@@ -603,16 +603,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2"
+                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
-                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/4eff936d83eb809bde2c57a3cea0ee9643769031",
+                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031",
                 "shasum": ""
             },
             "require": {
@@ -664,7 +664,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-02-13T09:37:52+00:00"
+            "time": "2019-08-07T15:01:07+00:00"
         },
         {
             "name": "myclabs/deep-copy",

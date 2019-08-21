@@ -1177,16 +1177,17 @@ after@0.8.2:
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
-airbnb-browser-shims@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/airbnb-browser-shims/-/airbnb-browser-shims-3.2.1.tgz#3e1bc5e2697f7e65494f5184c0129c4987cb36d2"
-  integrity sha512-kVxHakoqZ2LKMrv4TkFiOi73OKPJ32o02XUVVld03T8WGNLUmbndMQF4KOJz4BI5HJk1ZIyXK8py6qWOgBpRRA==
+airbnb-browser-shims@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/airbnb-browser-shims/-/airbnb-browser-shims-3.3.0.tgz#ff71c66b7d07d6e0f4e90c971cd47e3165292868"
+  integrity sha512-yjktrNJi5zXAeqVxWwPgT9ZltARyxbmg77/u9OnfqEplq/gtvpDLMwy7n6P07t3MCRobYFsOzOXfHCB2K5ftvQ==
   dependencies:
     airbnb-js-shims "^2.1.1"
     classlist-polyfill "^1.2.0"
     console-polyfill "^0.3.0"
     document.contains "^1.0.0"
     element-closest "^2.0.2"
+    focus-visible "^5.0.2"
     ima-babel6-polyfill "^0.12.0"
     input-placeholder-polyfill "^1.0.0"
     intersection-observer "^0.5.1"
@@ -4141,6 +4142,11 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
+
+focus-visible@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.0.2.tgz#4fae9cf40458b73c10701c9774c462e3ccd53caf"
+  integrity sha512-zT2fj/bmOgEBjqGbURGlowTmCwsIs3bRDMr/sFZz8Ly7VkEiwuCn9swNTL3pPuf8Oua2de7CLuKdnuNajWdDsQ==
 
 follow-redirects@1.5.10:
   version "1.5.10"

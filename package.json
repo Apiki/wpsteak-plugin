@@ -39,7 +39,7 @@
     "webpack": "4.39.2",
     "webpack-cli": "3.3.7",
     "webpack-manifest-plugin": "2.0.4",
-    "webpack-spritesmith": "1.0.1"
+    "webpack-spritesmith": "1.0.2"
   },
   "devDependencies": {
     "browser-sync": "2.26.7",

@@ -53,6 +53,6 @@
     "stylelint": "10.1.0",
     "stylelint-config-recommended-scss": "4.0.0",
     "stylelint-order": "3.1.0",
-    "stylelint-scss": "3.10.1"
+    "stylelint-scss": "3.11.1"
   }
 }

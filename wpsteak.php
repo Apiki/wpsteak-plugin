@@ -42,7 +42,7 @@ $container->delegate(
 	( new League\Container\ReflectionContainer() )->cacheResolutions()
 );
 
-$plugin = wpsteak();
+$plugin = wpsteak(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride
 
 $plugin->set_container( $container );
 $plugin->register_hooks( $container->get( Cedaro\WP\Plugin\Provider\I18n::class ) );

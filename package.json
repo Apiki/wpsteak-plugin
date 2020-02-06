@@ -51,7 +51,7 @@
     "eslint-plugin-react": "7.18.3",
     "node-wp-i18n": "1.2.3",
     "stylelint": "13.0.0",
-    "stylelint-config-recommended-scss": "4.1.0",
+    "stylelint-config-recommended-scss": "4.2.0",
     "stylelint-order": "4.0.0",
     "stylelint-scss": "3.13.0"
   }

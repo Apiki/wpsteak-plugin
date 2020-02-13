@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 /**
  * WP Steak
  *
@@ -14,6 +15,7 @@
  * Requires PHP: 7.1
  */
 
+use Cedaro\WP\Plugin\Plugin;
 use Cedaro\WP\Plugin\PluginFactory;
 
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
@@ -25,7 +27,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
  *
  * @return \Cedaro\WP\Plugin
  */
-function wpsteak() {
+function wpsteak(): Plugin {
 	static $instance;
 
 	if ( null === $instance ) {
@@ -39,7 +41,7 @@ $container = new League\Container\Container();
 
 /* register the reflection container as a delegate to enable auto wiring. */
 $container->delegate(
-	( new League\Container\ReflectionContainer() )->cacheResolutions()
+	( new League\Container\ReflectionContainer() )->cacheResolutions(),
 );
 
 $plugin = wpsteak(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride

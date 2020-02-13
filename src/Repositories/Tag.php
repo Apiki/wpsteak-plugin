@@ -1,58 +1,34 @@
-<?php
-/**
- * Tag.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Repositories;
 
 use App\Entities\Tag as Entity;
-use WPSteak\Entities\Collection;
+use App\Entities\Tags;
 use WPSteak\Repositories\AbstractTerm;
 
-/**
- * Tag class.
- */
 class Tag extends AbstractTerm {
 
-	/**
-	 * Find one.
-	 *
-	 * @param \WP_Term|int $term The term object or id.
-	 * @return Entity|null
-	 */
-	public function find_one( $term ) : ?Entity {
+	public function find_one_by_term( \WP_Term $term ): ?Entity {
 		$term = $this->get_term( $term );
 
-		if ( empty( $term ) ) {
+		if ( ! $term ) {
 			return null;
 		}
 
 		return ( new Entity() )->set_term( $term );
 	}
 
-	/**
-	 * Find all.
-	 *
-	 * @return Collection
-	 */
-	public function find_all() : Collection {
+	public function find_all(): Tags {
 		$terms = $this->get_terms(
 			[
 				'taxonomy'   => Entity::TAXONOMY,
 				'hide_empty' => false,
-			]
+			],
 		);
 
-		$collection = new Collection();
-
-		foreach ( $terms as $term ) {
-			$collection->add_entity( ( new Entity() )->set_term( $term ) );
-		}
-
-		return $collection;
+		return new Tags(
+			...array_map( static fn( $term ) => ( new Entity() )->set_term( $term ), $terms ),
+		);
 	}
+
 }

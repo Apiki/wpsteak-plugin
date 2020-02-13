@@ -1,4 +1,5 @@
 {
     "phpSniffer.executablesFolder": "./vendor/bin/",
-    "phpSniffer.standard": "./phpcs.xml.dist"
+    "phpSniffer.standard": "./phpcs.xml",
+    "intelephense.files.maxSize": 9000000
 }

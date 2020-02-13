@@ -1,40 +1,28 @@
-<?php
-/**
- * Service provider.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Services\CarbonFields;
 
 use Carbon_Fields\Helper\Helper as CarbonHelper;
 
-/**
- * Service provider class.
- *
- * @codeCoverageIgnore
- */
+/** @codeCoverageIgnore */
 class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceProvider {
 
 	/**
-	 * Provides.
-	 *
-	 * @var string[]
+	 * @phpcs SlevomatCodingStandard.Commenting.UselessInheritDocComment
+	 * {@inheritDoc}
 	 */
 	protected $provides = [
 		CarbonHelper::class,
 	];
 
 	/**
-	 * Register.
+	 * {@inheritDoc}
 	 *
 	 * @link https://github.com/thephpleague/container/issues/159
-	 * @return void
 	 */
-	public function register() {
+	public function register(): void {
 		$this->getContainer()
 			->/* @scrutinizer ignore-call */ share( CarbonHelper::class, CarbonHelper::class );
 	}
+
 }

@@ -1,53 +1,36 @@
-<?php
-/**
- * Admin.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Providers\Assets;
 
 use WPSteak\Providers\AbstractHookProvider;
 use WPSteak\Services\Assets;
 
-/**
- * Admin class.
- */
 class Admin extends AbstractHookProvider {
 
 	use Assets;
 
 	/**
-	 * Register hooks.
-	 *
-	 * @return void
+	 * {@inheritDoc}
 	 */
 	public function register_hooks() {
 		$this->add_action( 'admin_enqueue_scripts', 'enqueue' );
 	}
 
-	/**
-	 * Enqueue.
-	 *
-	 * @return void
-	 */
-	protected function enqueue() {
+	protected function enqueue(): void {
 		$handle = "{$this->plugin->get_slug()}-admin";
 
 		$this->enqueue_script(
 			$handle,
 			$this->plugin->get_url( 'dist/admin.js' ),
 			$this->plugin->get_path( 'dist/admin.js' ),
-			[ 'jquery', 'wp-i18n' ],
-			true
+			['jquery', 'wp-i18n'],
+			true,
 		);
 
 		$this->enqueue_style(
 			$handle,
 			$this->plugin->get_url( 'dist/styles/admin.css' ),
-			$this->plugin->get_path( 'dist/styles/admin.css' )
+			$this->plugin->get_path( 'dist/styles/admin.css' ),
 		);
 
 		if ( ! function_exists( 'wp_set_script_translations' ) ) {
@@ -61,7 +44,8 @@ class Admin extends AbstractHookProvider {
 		wp_set_script_translations(
 			$handle,
 			$this->plugin->get_slug(),
-			$this->plugin->get_path( 'languages' )
+			$this->plugin->get_path( 'languages' ),
 		);
 	}
+
 }

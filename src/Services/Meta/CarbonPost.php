@@ -1,11 +1,4 @@
-<?php
-/**
- * Carbon Post.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Services\Meta;
 
@@ -22,42 +15,33 @@ class CarbonPost implements PostInterface {
 
 	/**
 	 * Helper.
-	 *
-	 * @var CarbonHelper
 	 */
-	protected $helper;
+	protected CarbonHelper $helper;
 
 	/**
 	 * Construct.
 	 *
-	 * @param CarbonHelper $helper Helper.
+	 * @param \Carbon_Fields\Helper\Helper $helper Helper.
 	 */
 	public function __construct( CarbonHelper $helper ) {
 		$this->helper = $helper;
 	}
 
 	/**
-	 * Get.
-	 *
-	 * @param integer $id Id.
-	 * @param string  $key Key.
-	 * @param boolean $single Single.
-	 * @return mixed
+	 * {@inheritDoc}
 	 */
-	public function get( int $id, string $key, bool $single = false ) {
-		return $this->helper::get_post_meta( $id, $key );
+	public function get(
+		int $pid,
+		string $key,
+		// phpcs:ignore SlevomatCodingStandard.Functions.UnusedParameter
+		bool $single = false ) {
+		return $this->helper::get_post_meta( $pid, $key );
 	}
 
-	/**
-	 * Set.
-	 *
-	 * @param integer $id Id.
-	 * @param string  $key Key.
-	 * @param mixed   $value Value.
-	 * @return IMeta
-	 */
-	public function set( int $id, string $key, $value ) : IMeta {
-		$this->helper::set_post_meta( $id, $key, $value );
+	public function set( int $pid, string $key, string $value ): IMeta {
+		$this->helper::set_post_meta( $pid, $key, $value );
+
 		return $this;
 	}
+
 }

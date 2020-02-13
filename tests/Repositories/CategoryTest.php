@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 /**
  * Category test.
  *
@@ -7,71 +8,50 @@
 
 namespace App\Test\Repositories;
 
+use App\Entities\Categories;
 use App\Entities\Category as Entity;
 use App\Repositories\Category as Repository;
-use WPSteak\Entities\Collection;
 
-/**
- * Category test class.
- */
 final class CategoryTest extends \PHPUnit\Framework\TestCase {
 
-	/**
-	 * Test find by id fail.
-	 *
-	 * @return void
-	 */
-	public function test_find_one_fail() {
-		$repository = $this->getMockBuilder( Repository::class )
-			->disableOriginalConstructor()
-			->setMethods( [ 'get_term' ] )
-			->getMock();
+	private \WP_Term $term;
 
-		$repository->method( 'get_term' )
+	/** @var \App\Repositories\Category&\PHPUnit\Framework\MockObject\MockObject $repository */
+	private Repository $repository;
+
+	public function setUp(): void {
+		$this->term       = $this->getMockBuilder( 'WP_Term' )->getMock();
+		$this->repository = $this->getMockBuilder( Repository::class )
+		->disableOriginalConstructor()
+		->setMethods( ['get_term', 'get_terms'] )
+		->getMock();
+	}
+
+	public function test_find_one_by_term_id_fail(): void {
+		$this->repository->method( 'get_term' )
 			->will( $this->returnValue( null ) );
 
-		$entity = $repository->find_one( 0 );
+		$entity = $this->repository->find_one_by_term_id( 0 );
 
 		$this->assertNull( $entity );
 	}
 
-	/**
-	 * Test find by id success.
-	 *
-	 * @return void
-	 */
-	public function test_find_one_success() {
-		$term       = $this->getMockBuilder( 'WP_Term' )->getMock();
-		$repository = $this->getMockBuilder( Repository::class )
-			->disableOriginalConstructor()
-			->setMethods( [ 'get_term' ] )
-			->getMock();
+	public function test_find_one_by_term_id_success(): void {
+		$this->repository->method( 'get_term' )
+			->will( $this->returnValue( $this->term ) );
 
-		$repository->method( 'get_term' )
-			->will( $this->returnValue( $term ) );
-
-		$entity = $repository->find_one( 1 );
+		$entity = $this->repository->find_one_by_term_id( 1 );
 
 		$this->assertInstanceOf( Entity::class, $entity );
 	}
 
-	/**
-	 * Test find all.
-	 *
-	 * @return void
-	 */
-	public function test_find_all() {
-		$term       = $this->getMockBuilder( 'WP_Term' )->getMock();
-		$repository = $this->getMockBuilder( Repository::class )
-			->disableOriginalConstructor()
-			->setMethods( [ 'get_terms' ] )
-			->getMock();
+	public function test_find_all(): void {
+		$this->repository->method( 'get_terms' )
+			->will( $this->returnValue( [$this->term] ) );
 
-		$repository->method( 'get_terms' )
-			->will( $this->returnValue( [ $term ] ) );
+		$categories = $this->repository->find_all();
 
-		$collection = $repository->find_all( 1, 1 );
-
-		$this->assertInstanceOf( Collection::class, $collection );
+		$this->assertInstanceOf( Categories::class, $categories );
 	}
+
 }

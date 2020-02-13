@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 /**
  * Page test.
  *
@@ -15,42 +16,35 @@ use App\Repositories\Page as Repository;
  */
 final class PageTest extends \PHPUnit\Framework\TestCase {
 
-	/**
-	 * Test find by id fail.
-	 *
-	 * @return void
-	 */
-	public function test_find_one_fail() {
-		$repository = $this->getMockBuilder( Repository::class )
-			->disableOriginalConstructor()
-			->setMethods( [ 'get_post' ] )
-			->getMock();
+	private \WP_Post $post;
 
-		$repository->method( 'get_post' )
+	/** @var \App\Repositories\Page&\PHPUnit\Framework\MockObject\MockObject $repository */
+	private Repository $repository;
+
+	public function setUp(): void {
+		$this->post       = $this->getMockBuilder( 'WP_Post' )->getMock();
+		$this->repository = $this->getMockBuilder( Repository::class )
+		->disableOriginalConstructor()
+		->setMethods( ['get_post'] )
+		->getMock();
+	}
+
+	public function test_find_one_by_post_fail(): void {
+		$this->repository->method( 'get_post' )
 			->will( $this->returnValue( null ) );
 
-		$entity = $repository->find_one( 0 );
+		$entity = $this->repository->find_one_by_post( $this->post );
 
 		$this->assertNull( $entity );
 	}
 
-	/**
-	 * Test find by id success.
-	 *
-	 * @return void
-	 */
-	public function test_find_one_success() {
-		$post       = $this->getMockBuilder( 'WP_Post' )->getMock();
-		$repository = $this->getMockBuilder( Repository::class )
-			->disableOriginalConstructor()
-			->setMethods( [ 'get_post' ] )
-			->getMock();
+	public function test_find_one_by_post_success(): void {
+		$this->repository->method( 'get_post' )
+			->will( $this->returnValue( $this->post ) );
 
-		$repository->method( 'get_post' )
-			->will( $this->returnValue( $post ) );
-
-		$entity = $repository->find_one( 1 );
+		$entity = $this->repository->find_one_by_post( $this->post );
 
 		$this->assertInstanceOf( Entity::class, $entity );
 	}
+
 }

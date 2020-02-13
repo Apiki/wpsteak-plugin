@@ -1,9 +1,4 @@
-<?php
-/**
- * Meta box data.
- *
- * @package App
- */
+<?php declare(strict_types = 1);
 
 ?>
 <label><?php esc_html_e( 'Endereço:', 'app' ); ?>

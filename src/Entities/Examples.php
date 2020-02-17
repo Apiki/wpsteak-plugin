@@ -2,6 +2,7 @@
 
 namespace App\Entities;
 
+/** @codeCoverageIgnore */
 class Examples implements \IteratorAggregate {
 
 	/** @var array<\App\Entities\Example> */

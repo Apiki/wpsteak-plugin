@@ -24,9 +24,9 @@ final class PostTest extends \PHPUnit\Framework\TestCase {
 	public function setUp(): void {
 		$this->post       = $this->getMockBuilder( 'WP_Post' )->getMock();
 		$this->repository = $this->getMockBuilder( Repository::class )
-		->disableOriginalConstructor()
-		->setMethods( ['get_post', 'get_posts'] )
-		->getMock();
+			->disableOriginalConstructor()
+			->setMethods( ['get_post', 'get_posts'] )
+			->getMock();
 	}
 
 	public function test_find_one_by_post_fail(): void {

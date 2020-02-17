@@ -4,6 +4,7 @@ namespace App\Entities;
 
 use WPSteak\Entities\AbstractPost;
 
+/** @codeCoverageIgnore */
 class Example extends AbstractPost {
 
 	public const POST_TYPE = 'example';

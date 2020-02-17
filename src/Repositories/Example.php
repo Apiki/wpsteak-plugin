@@ -6,6 +6,7 @@ use App\Entities\Example as Entity;
 use App\Entities\Examples;
 use WPSteak\Repositories\AbstractPost;
 
+/** @codeCoverageIgnore */
 class Example extends AbstractPost {
 
 	public function find_one_by_post( \WP_Post $post ): ?Entity {

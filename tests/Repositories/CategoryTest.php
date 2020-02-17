@@ -22,9 +22,9 @@ final class CategoryTest extends \PHPUnit\Framework\TestCase {
 	public function setUp(): void {
 		$this->term       = $this->getMockBuilder( 'WP_Term' )->getMock();
 		$this->repository = $this->getMockBuilder( Repository::class )
-		->disableOriginalConstructor()
-		->setMethods( ['get_term', 'get_terms'] )
-		->getMock();
+			->disableOriginalConstructor()
+			->setMethods( ['get_term', 'get_terms'] )
+			->getMock();
 	}
 
 	public function test_find_one_by_term_id_fail(): void {

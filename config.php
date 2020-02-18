@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 /**
  * Config.
  *
@@ -11,7 +12,6 @@
 
 return [
 	'service_providers' => [
-		App\Services\CarbonFields\ServiceProvider::class,
 		App\Services\Meta\ServiceProvider::class,
 	],
 	'hook_providers'    => [

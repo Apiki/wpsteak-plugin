@@ -1,11 +1,4 @@
-<?php
-/**
- * Service provider.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Services\Meta;
 
@@ -22,9 +15,7 @@ use WPSteak\Services\Meta\TermInterface;
 class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceProvider {
 
 	/**
-	 * Provides.
-	 *
-	 * @var string[]
+	 * {@inheritDoc}
 	 */
 	protected $provides = [
 		PostInterface::class,
@@ -32,16 +23,16 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 	];
 
 	/**
-	 * Register.
+	 * {@inheritDoc}
 	 *
 	 * @link https://github.com/thephpleague/container/issues/159
-	 * @return void
 	 */
-	public function register() {
+	public function register(): void {
 		$this->getContainer()
 			->/* @scrutinizer ignore-call */ share( PostInterface::class, Post::class );
 
 		$this->getContainer()
 			->/* @scrutinizer ignore-call */ share( TermInterface::class, Term::class );
 	}
+
 }

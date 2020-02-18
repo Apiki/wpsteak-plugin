@@ -1,50 +1,24 @@
-<?php
-/**
- * Example.
- *
- * @package App
- */
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Entities;
 
 use WPSteak\Entities\AbstractPost;
 
-/**
- * Example class.
- */
+/** @codeCoverageIgnore */
 class Example extends AbstractPost {
 
-	/**
-	 * Address.
-	 *
-	 * @var string
-	 */
-	protected $address;
+	public const POST_TYPE = 'example';
 
-	/**
-	 * Get address.
-	 *
-	 * @return string
-	 */
-	public function get_address() : string {
-		return (string) $this->address;
+	protected string $address;
+
+	public function get_address(): string {
+		return $this->address;
 	}
 
-	/**
-	 * Set address.
-	 *
-	 * @param string $value Address.
-	 * @return self
-	 */
-	public function set_address( $value ) : self {
+	public function set_address( string $value ): self {
 		$this->address = $value;
+
 		return $this;
 	}
 
-	/**
-	 * Post Type.
-	 */
-	const POST_TYPE = 'example';
 }

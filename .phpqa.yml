@@ -1,0 +1,11 @@
+phpqa:
+    output: cli
+    tools: phpcs:0,phpcpd:0
+    ignoredDirs: dist,node_modules,vendor,tests
+
+phpcs:
+    standard: phpcs.xml
+
+phpcpd:
+    minLines: 5
+    minTokens: 70

@@ -29,12 +29,13 @@
 	<rule ref="PHPCompatibilityWP"/>
 	<!-- For help in understanding this testVersion:
 		https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
-	<config name="testVersion" value="7.1-"/>
+	<config name="testVersion" value="7.4-"/>
 
 	<!-- Rules: WordPress Coding Standards - see
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
-	<rule ref="WordPress-Extra"/><!-- Includes WordPress-Core -->
-	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Extra"><!-- Includes WordPress-Core -->
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
+	</rule>
 	<!-- For help in understanding these custom sniff properties:
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
 	<config name="minimum_supported_wp_version" value="4.9"/>
@@ -45,6 +46,7 @@
 		</properties>
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="Squiz.PHP.CommentedOutCode"/>
 	</rule>
 
 	<rule ref="WordPress.WP.I18n">
@@ -59,5 +61,36 @@
 		<properties>
 			<property name="blank_line_check" value="true"/>
 		</properties>
+	</rule>
+
+	<rule ref="SlevomatCodingStandard.Namespaces">
+		<properties>
+			<property name="namespacesRequiredToUse" type="array">
+				<element value="App"/>
+				<element value="Carbon_Fields"/>
+				<element value="Cedaro"/>
+				<element value="WPSteak"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+		<properties>
+			<property name="rootNamespaces" type="array">
+				<element key="src" value="App"/>
+				<element key="tests" value="App\Test"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="SlevomatCodingStandard">
+		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
+		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
+		<exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
+		<exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment"/>
+		<exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
+		<exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
+		<exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
+		<exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
 	</rule>
 </ruleset>

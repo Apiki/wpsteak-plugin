@@ -7,7 +7,7 @@
 * Wonderful resources processing configuration extracted from [wpemerge-theme](https://github.com/htmlburger/wpemerge-theme);
 * PHP PSR-4 autoloading for all your source code and tests;
 ## Requirements
-* PHP >= 7.1
+* PHP >= 7.4
 * Composer
 ## Quickstart
 1. Browse to `wp-content/plugins`.
@@ -20,16 +20,27 @@
 ├── resources/                       # Build process configuration, Scripts, Styles, etc.
 ├── src/                             # PSR-4 autoloaded classes.
 │   ├── Entities/                    # Classes for using on data mapper.
+│   │   ├── Categories.php
 │   │   ├── Category.php
+│   │   ├── ExampleCategory.php
 │   │   ├── Example.php
+│   │   ├── Examples.php
 │   │   ├── Page.php
 │   │   ├── Post.php
-│   │   └── Tag.php
+│   │   ├── Posts.php
+│   │   ├── Tag.php
+│   │   └── Tags.php
 │   ├── Providers/                   # Your hooks declarations.
-│   │   ├── Example/
+│   │   ├── Assets
+│   │   │   ├── Admin.php
+│   │   │   ├── Editor.php
+│   │   │   ├── Login.php
+│   │   │   └── Theme.php
+│   │   ├── Example
 │   │   │   ├── PostMeta.php
 │   │   │   └── PostType.php
-│   │   └── Assets.php
+│   │   └── ExampleCategory
+│   │       └── Taxonomy.php
 │   ├── Repositories/                # Where you put your data handle (includes API).
 │   │   ├── Category.php
 │   │   ├── Example.php

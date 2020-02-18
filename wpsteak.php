@@ -7,12 +7,12 @@
  *
  * Plugin Name: WP Steak
  * Description: A fully structured plugin.
- * Version: 2.1.0
+ * Version: 3.0.1
  * Author: Apiki
  * Author URI: https://apiki.com/
  * Text Domain: app
  * Domain Path: /languages
- * Requires PHP: 7.1
+ * Requires PHP: 7.4
  */
 
 use Cedaro\WP\Plugin\Plugin;

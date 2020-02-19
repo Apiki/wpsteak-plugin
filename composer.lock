@@ -4,35 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de82a5c7ee30c6e61c9245356578722f",
+    "content-hash": "cfdf71f2e554d077cca3d9dd5f57e4fc",
     "packages": [
         {
             "name": "apiki/wpsteak",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Apiki/wpsteak.git",
-                "reference": "17fa0b14c1ee8b758d76654fbd2271ffa9c4095d"
+                "reference": "7bc4c38bcbe671a7758b5ccb28de560857afe749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/17fa0b14c1ee8b758d76654fbd2271ffa9c4095d",
-                "reference": "17fa0b14c1ee8b758d76654fbd2271ffa9c4095d",
+                "url": "https://api.github.com/repos/Apiki/wpsteak/zipball/7bc4c38bcbe671a7758b5ccb28de560857afe749",
+                "reference": "7bc4c38bcbe671a7758b5ccb28de560857afe749",
                 "shasum": ""
             },
             "require": {
                 "cedaro/wp-plugin": "0.4.0",
                 "dusank/knapsack": "10.0.0",
                 "php": ">=7.2",
-                "psr/log": "1.1.0"
+                "psr/log": "1.1.2"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
-                "mockery/mockery": "1.2.0",
-                "phpcompatibility/phpcompatibility-wp": "2.0.0",
-                "phpunit/phpunit": "8.0.1",
-                "squizlabs/php_codesniffer": "3.4.0",
-                "wp-coding-standards/wpcs": "2.0.0"
+                "dealerdirect/phpcodesniffer-composer-installer": "0.6.0",
+                "mockery/mockery": "1.3.1",
+                "phpcompatibility/phpcompatibility-wp": "2.1.0",
+                "phpunit/phpunit": "9.0.1",
+                "squizlabs/php_codesniffer": "3.5.4",
+                "wp-coding-standards/wpcs": "2.2.1"
             },
             "type": "library",
             "autoload": {
@@ -44,8 +44,8 @@
             "license": [
                 "GPL-2.0-only"
             ],
-            "description": "Some patterns for build your own structured WordPress plugin.",
-            "time": "2019-02-04T11:25:46+00:00"
+            "description": "Patterns for building an application in WordPress.",
+            "time": "2020-02-19T14:22:38+00:00"
         },
         {
             "name": "cedaro/wp-plugin",
@@ -386,16 +386,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +404,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -429,7 +429,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-20T15:27:04+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         }
     ],
     "packages-dev": [

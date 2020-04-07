@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "063004af4507a6b8fbb336c3185ff6a6",
+    "content-hash": "3f86291e9cc3325dd828271be6f68e1d",
     "packages": [
         {
             "name": "apiki/wpsteak",
@@ -1054,16 +1054,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v5.3.2",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "b05e2ea95ae2ae8bc9e9fdfaaad43475bcf3e16b"
+                "reference": "baab62405f6a6ac9b25ed3fe6df371d090f9bc0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/b05e2ea95ae2ae8bc9e9fdfaaad43475bcf3e16b",
-                "reference": "b05e2ea95ae2ae8bc9e9fdfaaad43475bcf3e16b",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/baab62405f6a6ac9b25ed3fe6df371d090f9bc0c",
+                "reference": "baab62405f6a6ac9b25ed3fe6df371d090f9bc0c",
                 "shasum": ""
             },
             "replace": {
@@ -1090,7 +1090,7 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2019-12-19T00:20:48+00:00"
+            "time": "2020-03-31T21:58:11+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",

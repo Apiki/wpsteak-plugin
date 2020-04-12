@@ -1,5 +1,8 @@
 module.exports = {
-  extends: 'airbnb',
+  extends: [
+    'airbnb',
+    'wordpress',
+  ],
   rules: {
     // Prevent warnings for webpack resolve aliases.
     'import/no-unresolved': 'off',

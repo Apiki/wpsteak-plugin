@@ -37,6 +37,7 @@ const babelLoader = {
           },
         },
       ],
+      '@babel/react'
     ],
   },
 };

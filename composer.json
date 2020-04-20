@@ -14,7 +14,7 @@
     "phpcompatibility/phpcompatibility-wp": "2.1.0",
     "phpunit/phpunit": "8.5.3",
     "wp-coding-standards/wpcs": "2.2.1",
-    "slevomat/coding-standard": "6.2.0",
+    "slevomat/coding-standard": "6.3.2",
     "edgedesign/phpqa": "1.23.3",
     "php-stubs/wordpress-stubs": "5.4.0"
   },

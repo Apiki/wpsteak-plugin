@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'airbnb',
-    'wordpress',
+    'plugin:@wordpress/eslint-plugin/recommended'
   ],
   rules: {
     // Prevent warnings for webpack resolve aliases.

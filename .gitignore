@@ -5,6 +5,7 @@
 
 # Development files
 /config.json
+phpstan-phpqa.neon
 
 # Build modules
 /node_modules/

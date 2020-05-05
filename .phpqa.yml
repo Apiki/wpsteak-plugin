@@ -1,6 +1,6 @@
 phpqa:
     output: cli
-    tools: phpcs:0,phpcpd:0
+    tools: phpcs:0,phpcpd:0,phpstan:0
     ignoredDirs: dist,node_modules,vendor,tests
 
 phpcs:

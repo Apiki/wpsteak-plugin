@@ -8,8 +8,6 @@ use WPSteak\Repositories\AbstractPost;
 class Page extends AbstractPost {
 
 	public function find_one_by_post( \WP_Post $post ): ?Entity {
-		$post = $this->get_post( $post );
-
 		return ( new Entity() )->set_post( $post );
 	}
 

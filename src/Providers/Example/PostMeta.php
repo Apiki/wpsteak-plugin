@@ -15,7 +15,7 @@ class PostMeta extends AbstractHookProvider {
 
 	public function __construct( Repository $repository, Logger $logger ) {
 		$this->repository = $repository;
-		$this->logger     = $logger;
+		$this->logger = $logger;
 	}
 
 	/**
@@ -42,11 +42,11 @@ class PostMeta extends AbstractHookProvider {
 			Entity::POST_TYPE,
 			'address',
 			[
-				'type'              => 'string',
+				'type' => 'string',
 				'sanitize_callback' => 'sanitize_text_field',
-				'single'            => true,
-				'show_in_rest'      => true,
-				'description'       => __( 'Endereço.', 'app' ),
+				'single' => true,
+				'show_in_rest' => true,
+				'description' => __( 'Endereço.', 'app' ),
 			],
 		);
 	}

@@ -24,8 +24,6 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
 /**
  * Retrieve the main plugin instance.
- *
- * @return \Cedaro\WP\Plugin
  */
 function wpsteak(): Plugin {
 	static $instance;
@@ -44,7 +42,8 @@ $container->delegate(
 	( new League\Container\ReflectionContainer() )->cacheResolutions(),
 );
 
-$plugin = wpsteak(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride
+// phpcs:ignore WordPress.WP.GlobalVariablesOverride
+$plugin = wpsteak();
 
 $plugin->set_container( $container );
 $plugin->register_hooks( $container->get( Cedaro\WP\Plugin\Provider\I18n::class ) );

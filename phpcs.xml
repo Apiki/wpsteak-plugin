@@ -34,7 +34,10 @@
 	<!-- Rules: WordPress Coding Standards - see
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
 	<rule ref="WordPress-Extra"><!-- Includes WordPress-Core -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment"/>
 	</rule>
 	<!-- For help in understanding these custom sniff properties:
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
@@ -45,8 +48,6 @@
 			<property name="strict_class_file_names" value="false"/>
 		</properties>
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
-		<exclude name="Squiz.PHP.CommentedOutCode"/>
 	</rule>
 
 	<rule ref="WordPress.WP.I18n">
@@ -54,12 +55,6 @@
 			<property name="text_domain" type="array">
 				<element value="app"/>
 			</property>
-		</properties>
-	</rule>
-
-	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
-		<properties>
-			<property name="blank_line_check" value="true"/>
 		</properties>
 	</rule>
 
@@ -92,5 +87,6 @@
 		<exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
 		<exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
 		<exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
+		<exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
 	</rule>
 </ruleset>

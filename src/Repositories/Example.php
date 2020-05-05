@@ -25,12 +25,12 @@ class Example extends AbstractPost {
 		$posts = $this->get_posts(
 			[
 				'numberposts' => $quantity,
-				'author'      => $author_id,
+				'author' => $author_id,
 			],
 		);
 
 		return new Examples(
-			...array_map( static fn( $post ) => ( new Entity() )->set_post( $post ), $posts ),
+			...array_map( static fn ( $post ) => ( new Entity() )->set_post( $post ), $posts ),
 		);
 	}
 

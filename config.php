@@ -14,7 +14,7 @@ return [
 	'service_providers' => [
 		App\Services\Meta\ServiceProvider::class,
 	],
-	'hook_providers'    => [
+	'hook_providers' => [
 		App\Providers\Assets\Admin::class,
 		App\Providers\Assets\Editor::class,
 		App\Providers\Assets\Login::class,

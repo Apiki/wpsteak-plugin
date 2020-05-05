@@ -24,15 +24,13 @@ class ServiceProvider extends \League\Container\ServiceProvider\AbstractServiceP
 
 	/**
 	 * {@inheritDoc}
-	 *
-	 * @link https://github.com/thephpleague/container/issues/159
 	 */
 	public function register(): void {
-		$this->getContainer()
-			->/* @scrutinizer ignore-call */ share( PostInterface::class, Post::class );
+		$this->getLeagueContainer()
+			->share( PostInterface::class, Post::class );
 
-		$this->getContainer()
-			->/* @scrutinizer ignore-call */ share( TermInterface::class, Term::class );
+		$this->getLeagueContainer()
+			->share( TermInterface::class, Term::class );
 	}
 
 }

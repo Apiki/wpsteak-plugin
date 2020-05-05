@@ -21,13 +21,13 @@ class Category extends AbstractTerm {
 	public function find_all(): Categories {
 		$terms = $this->get_terms(
 			[
-				'taxonomy'   => Entity::TAXONOMY,
+				'taxonomy' => Entity::TAXONOMY,
 				'hide_empty' => false,
 			],
 		);
 
 		return new Categories(
-			...array_map( static fn( $term ) => ( new Entity() )->set_term( $term ), $terms ),
+			...array_map( static fn ( $term ) => ( new Entity() )->set_term( $term ), $terms ),
 		);
 	}
 

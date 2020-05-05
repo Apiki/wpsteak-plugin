@@ -22,7 +22,7 @@ final class PageTest extends \PHPUnit\Framework\TestCase {
 	private Repository $repository;
 
 	public function setUp(): void {
-		$this->post       = $this->getMockBuilder( 'WP_Post' )->getMock();
+		$this->post = $this->getMockBuilder( 'WP_Post' )->getMock();
 		$this->repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
 			->setMethods( ['get_post'] )

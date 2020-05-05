@@ -19,7 +19,7 @@ final class PostsTest extends \PHPUnit\Framework\TestCase {
 	private Posts $categories;
 
 	public function setUp(): void {
-		$this->entity     = new Entity();
+		$this->entity = new Entity();
 		$this->categories = new Posts(
 			$this->entity,
 		);

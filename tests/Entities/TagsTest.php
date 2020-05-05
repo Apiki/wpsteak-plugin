@@ -19,7 +19,7 @@ final class TagsTest extends \PHPUnit\Framework\TestCase {
 	private Tags $categories;
 
 	public function setUp(): void {
-		$this->entity     = new Entity();
+		$this->entity = new Entity();
 		$this->categories = new Tags(
 			$this->entity,
 		);

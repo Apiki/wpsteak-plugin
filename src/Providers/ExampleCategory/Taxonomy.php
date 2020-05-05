@@ -16,11 +16,11 @@ class Taxonomy extends AbstractTaxonomy {
 	 */
 	public function get_args(): array {
 		return [
-			'labels'       => $this->get_labels(
+			'labels' => $this->get_labels(
 				__( 'Categoria', 'app' ),
 				__( 'Categorias', 'app' ),
 			),
-			'public'       => true,
+			'public' => true,
 			'show_in_rest' => true,
 			'hierarchical' => true,
 		];

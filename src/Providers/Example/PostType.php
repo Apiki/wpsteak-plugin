@@ -15,14 +15,14 @@ class PostType extends AbstractPostType {
 	 */
 	public function get_args(): array {
 		return [
-			'labels'       => $this->get_labels(
+			'labels' => $this->get_labels(
 				__( 'Exemplo', 'app' ),
 				__( 'Exemplos', 'app' ),
 			),
-			'public'       => true,
+			'public' => true,
 			'show_in_rest' => true,
-			'menu_icon'    => 'dashicons-smiley',
-			'supports'     => [ 'title', 'custom-fields' ],
+			'menu_icon' => 'dashicons-smiley',
+			'supports' => [ 'title', 'custom-fields' ],
 		];
 	}
 

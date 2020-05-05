@@ -20,7 +20,7 @@ final class TagTest extends \PHPUnit\Framework\TestCase {
 	private Repository $repository;
 
 	public function setUp(): void {
-		$this->term       = $this->getMockBuilder( 'WP_Term' )->getMock();
+		$this->term = $this->getMockBuilder( 'WP_Term' )->getMock();
 		$this->repository = $this->getMockBuilder( Repository::class )
 			->disableOriginalConstructor()
 			->setMethods( ['get_term', 'get_terms'] )

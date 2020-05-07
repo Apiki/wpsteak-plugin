@@ -19,7 +19,7 @@
     "php-stubs/wordpress-stubs": "5.4.0",
     "szepeviktor/phpstan-wordpress": "0.6.0",
     "nette/neon": "3.1.2",
-    "vimeo/psalm": "^3.11"
+    "vimeo/psalm": "3.11.2"
   },
   "autoload": {
     "psr-4": {

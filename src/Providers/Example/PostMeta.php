@@ -21,7 +21,7 @@ class PostMeta extends AbstractHookProvider {
 	/**
 	 * {@inheritDoc}
 	 */
-	public function register_hooks() {
+	public function register_hooks(): void {
 		$this->add_action( 'init', 'register' );
 		$this->add_action( 'add_meta_boxes', 'add_boxes' );
 		$this->add_action( 'save_post_' . Entity::POST_TYPE, 'save' );

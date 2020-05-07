@@ -1,5 +1,10 @@
 {
     "phpSniffer.executablesFolder": "./vendor/bin/",
     "phpSniffer.standard": "./phpcs.xml",
-    "intelephense.files.maxSize": 9000000
+    "intelephense.files.maxSize": 9000000,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#072D59",
+        "titleBar.activeBackground": "#0A407C",
+        "titleBar.activeForeground": "#F6FAFE"
+    }
 }

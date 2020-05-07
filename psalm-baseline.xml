@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.11.2@d470903722cfcbc1cd04744c5491d3e6d13ec3d9">
+  <file src="src/Providers/Assets/Admin.php">
+    <UndefinedFunction occurrences="1">
+      <code>'enqueue'</code>
+    </UndefinedFunction>
+  </file>
+  <file src="src/Providers/Assets/Editor.php">
+    <UndefinedFunction occurrences="1">
+      <code>'enqueue'</code>
+    </UndefinedFunction>
+  </file>
+  <file src="src/Providers/Assets/Login.php">
+    <UndefinedFunction occurrences="1">
+      <code>'enqueue'</code>
+    </UndefinedFunction>
+  </file>
+  <file src="src/Providers/Assets/Theme.php">
+    <UndefinedFunction occurrences="1">
+      <code>'enqueue'</code>
+    </UndefinedFunction>
+  </file>
+  <file src="src/Providers/Example/PostMeta.php">
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>PostMeta</code>
+    </PropertyNotSetInConstructor>
+    <UndefinedFunction occurrences="3">
+      <code>'register'</code>
+      <code>'add_boxes'</code>
+      <code>'save'</code>
+    </UndefinedFunction>
+    <UnresolvableInclude occurrences="1">
+      <code>include $this-&gt;plugin-&gt;get_path( 'views/meta-box-data.php' )</code>
+    </UnresolvableInclude>
+  </file>
+  <file src="src/Repositories/Category.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>array_map( static fn ( $term ) =&gt; ( new Entity() )-&gt;set_term( $term ), $terms )</code>
+    </ArgumentTypeCoercion>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>( new Entity() )-&gt;set_term( $term )</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>?Entity</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Repositories/Example.php">
+    <PossiblyInvalidArgument occurrences="1"/>
+  </file>
+  <file src="src/Repositories/Page.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>( new Entity() )-&gt;set_post( $post )</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>?Entity</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Repositories/Post.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>( new Entity() )-&gt;set_post( $post )</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>?Entity</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="src/Repositories/Tag.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>array_map( static fn ( $term ) =&gt; ( new Entity() )-&gt;set_term( $term ), $terms )</code>
+    </ArgumentTypeCoercion>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>( new Entity() )-&gt;set_term( $term )</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>?Entity</code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="views/meta-box-data.php">
+    <UndefinedGlobalVariable occurrences="1">
+      <code>$entity</code>
+    </UndefinedGlobalVariable>
+  </file>
+</files>

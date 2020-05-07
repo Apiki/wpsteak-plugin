@@ -12,7 +12,7 @@ class Editor extends AbstractHookProvider {
 	/**
 	 * {@inheritDoc}
 	 */
-	public function register_hooks() {
+	public function register_hooks(): void {
 		$this->add_action( 'enqueue_block_editor_assets', 'enqueue' );
 	}
 

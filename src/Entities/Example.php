@@ -11,14 +11,13 @@ class Example extends AbstractPost {
 
 	protected string $address;
 
-	public function get_address(): string {
-		return $this->address;
+	public function __construct( \WP_Post $post, string $address ) {
+		$this->post = $post;
+		$this->address = $address;
 	}
 
-	public function set_address( string $value ): self {
-		$this->address = $value;
-
-		return $this;
+	public function get_address(): string {
+		return $this->address;
 	}
 
 }

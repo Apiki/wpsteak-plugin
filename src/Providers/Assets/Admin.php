@@ -12,7 +12,7 @@ class Admin extends AbstractHookProvider {
 	/**
 	 * {@inheritDoc}
 	 */
-	public function register_hooks() {
+	public function register_hooks(): void {
 		$this->add_action( 'admin_enqueue_scripts', 'enqueue' );
 	}
 

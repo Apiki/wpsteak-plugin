@@ -10,9 +10,7 @@ use WPSteak\Repositories\AbstractPost;
 class Example extends AbstractPost {
 
 	public function find_one_by_post( \WP_Post $post ): ?Entity {
-		return ( new Entity() )
-			->set_address( $this->meta->get( (int) $post->ID, 'address', true ) )
-			->set_post( $post );
+		return new Entity( $post, $this->meta->get( (int) $post->ID, 'address', true ) );
 	}
 
 	public function find_by_author_id( int $author_id, int $quantity ): Examples {
@@ -24,7 +22,13 @@ class Example extends AbstractPost {
 		);
 
 		return new Examples(
-			...array_map( static fn ( $post ) => ( new Entity() )->set_post( $post ), $posts ),
+			...array_map(
+				fn ( \WP_Post $post ) => new Entity(
+					$post,
+					$this->meta->get( (int) $post->ID, 'address', true ),
+				),
+				$posts,
+			),
 		);
 	}
 

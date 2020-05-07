@@ -12,7 +12,7 @@ class Theme extends AbstractHookProvider {
 	/**
 	 * {@inheritDoc}
 	 */
-	public function register_hooks() {
+	public function register_hooks(): void {
 		$this->add_action( 'wp_enqueue_scripts', 'enqueue' );
 	}
 

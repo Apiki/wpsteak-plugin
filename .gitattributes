@@ -1,3 +1,4 @@
 /.gitattributes export-ignore
 /README.md export-ignore
 /renovate.json export-ignore
+/.releaserc.yml export-ignore

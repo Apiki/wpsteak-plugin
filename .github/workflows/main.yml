@@ -25,6 +25,6 @@ jobs:
     - name: Action For Semantic Release
       uses: cycjimmy/semantic-release-action@v2.4.1
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         dry_run: true

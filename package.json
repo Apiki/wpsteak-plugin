@@ -1,4 +1,5 @@
 {
+  "name": "wpsteak-plugin",
   "engines": {
     "node": ">=10.15.0"
   },

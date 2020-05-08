@@ -17,9 +17,9 @@
 
 use Cedaro\WP\Plugin\Plugin;
 use Cedaro\WP\Plugin\PluginFactory;
+use Cedaro\WP\Plugin\Provider\I18n;
 use League\Container\Container;
 use League\Container\ReflectionContainer;
-use Cedaro\WP\Plugin\Provider\I18n;
 use WPSteak\Providers\I18n as WPSteakI18n;
 
 /**

@@ -17,10 +17,10 @@
 
 use Cedaro\WP\Plugin\Plugin;
 use Cedaro\WP\Plugin\PluginFactory;
-
-if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require __DIR__ . '/vendor/autoload.php';
-}
+use League\Container\Container;
+use League\Container\ReflectionContainer;
+use Cedaro\WP\Plugin\Provider\I18n;
+use WPSteak\Providers\I18n as WPSteakI18n;
 
 /**
  * Retrieve the main plugin instance.
@@ -35,26 +35,36 @@ function wpsteak(): Plugin {
 	return $instance;
 }
 
-$container = new League\Container\Container();
+/**
+ * Load and run the plugin.
+ */
+function wpsteak_load(): void {
+	if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+		require __DIR__ . '/vendor/autoload.php';
+	}
 
-/* register the reflection container as a delegate to enable auto wiring. */
-$container->delegate(
-	( new League\Container\ReflectionContainer() )->cacheResolutions(),
-);
+	$container = new Container();
 
-// phpcs:ignore WordPress.WP.GlobalVariablesOverride
-$plugin = wpsteak();
+	// Register the reflection container as a delegate to enable auto wiring.
+	$container->delegate(
+		( new ReflectionContainer() )->cacheResolutions(),
+	);
 
-$plugin->set_container( $container );
-$plugin->register_hooks( $container->get( Cedaro\WP\Plugin\Provider\I18n::class ) );
-$plugin->register_hooks( $container->get( WPSteak\Providers\I18n::class ) );
+	$plugin = wpsteak();
 
-$config = ( require __DIR__ . '/config.php' );
+	$plugin->set_container( $container );
+	$plugin->register_hooks( $container->get( I18n::class ) );
+	$plugin->register_hooks( $container->get( WPSteakI18n::class ) );
 
-foreach ( $config['service_providers'] as $service_provider ) {
-	$container->addServiceProvider( $service_provider );
+	$config = ( require __DIR__ . '/config.php' );
+
+	foreach ( $config['service_providers'] as $service_provider ) {
+		$container->addServiceProvider( $service_provider );
+	}
+
+	foreach ( $config['hook_providers'] as $hook_provider ) {
+		$plugin->register_hooks( $container->get( $hook_provider ) );
+	}
 }
 
-foreach ( $config['hook_providers'] as $hook_provider ) {
-	$plugin->register_hooks( $container->get( $hook_provider ) );
-}
+add_action( 'plugins_loaded', 'wpsteak_load', 0, 0 );

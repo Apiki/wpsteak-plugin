@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33b817bc901d67b484228f0e9058ba0c",
+    "content-hash": "067d9e5b3c8103ba8ddf0d21d38b89f1",
     "packages": [
         {
             "name": "apiki/wpsteak",
@@ -286,16 +286,16 @@
         },
         {
             "name": "league/container",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/container.git",
-                "reference": "235cc528636833fbf0d771ad0e2410d345e1096e"
+                "reference": "93238f74ff5964aee27a78508cdfbdba1cd338f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/container/zipball/235cc528636833fbf0d771ad0e2410d345e1096e",
-                "reference": "235cc528636833fbf0d771ad0e2410d345e1096e",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/93238f74ff5964aee27a78508cdfbdba1cd338f6",
+                "reference": "93238f74ff5964aee27a78508cdfbdba1cd338f6",
                 "shasum": ""
             },
             "require": {
@@ -348,7 +348,13 @@
                 "provider",
                 "service"
             ],
-            "time": "2019-06-30T10:51:38+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/philipobenito",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-05-18T08:20:23+00:00"
         },
         {
             "name": "psr/container",

@@ -69,7 +69,7 @@
     "eslint-plugin-react": "7.19.0",
     "husky": "4.2.5",
     "node-wp-i18n": "1.2.3",
-    "stylelint": "13.4.0",
+    "stylelint": "13.5.0",
     "stylelint-config-recommended-scss": "4.2.0",
     "stylelint-order": "4.0.0",
     "stylelint-scss": "3.17.2"

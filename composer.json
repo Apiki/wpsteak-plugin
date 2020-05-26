@@ -12,7 +12,7 @@
   "require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "0.6.2",
     "phpcompatibility/phpcompatibility-wp": "2.1.0",
-    "phpunit/phpunit": "8.5.4",
+    "phpunit/phpunit": "8.5.5",
     "wp-coding-standards/wpcs": "2.3.0",
     "slevomat/coding-standard": "6.3.3",
     "edgedesign/phpqa": "1.23.3",

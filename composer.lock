@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dea3cccb00cbffae02a79e6bc0cc9e2",
+    "content-hash": "6e549620e1e6d534cfc70f5a1f687728",
     "packages": [
         {
             "name": "apiki/wpsteak",
@@ -4003,16 +4003,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.16.0",
+            "version": "v1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "a54881ec0ab3b2005c406aed0023c062879031e7"
+                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a54881ec0ab3b2005c406aed0023c062879031e7",
-                "reference": "a54881ec0ab3b2005c406aed0023c062879031e7",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fa79b11539418b02fc5e1897267673ba2c19419c",
+                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c",
                 "shasum": ""
             },
             "require": {
@@ -4024,7 +4024,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.16-dev"
+                    "dev-master": "1.17-dev"
                 }
             },
             "autoload": {
@@ -4072,7 +4072,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-08T16:50:20+00:00"
+            "time": "2020-05-12T16:47:27+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -4484,16 +4484,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "3.11.3",
+            "version": "3.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "813302206a1b9db70ab954218ec2964373b8e001"
+                "reference": "3c60609c218d4d4b3b257728b8089094e5c6c6c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/813302206a1b9db70ab954218ec2964373b8e001",
-                "reference": "813302206a1b9db70ab954218ec2964373b8e001",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/3c60609c218d4d4b3b257728b8089094e5c6c6c2",
+                "reference": "3c60609c218d4d4b3b257728b8089094e5c6c6c2",
                 "shasum": ""
             },
             "require": {
@@ -4555,8 +4555,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Psalm\\Plugin\\": "src/Psalm/Plugin",
-                    "Psalm\\": "src/Psalm"
+                    "Psalm\\": "src/Psalm/"
                 },
                 "files": [
                     "src/functions.php",
@@ -4578,7 +4577,7 @@
                 "inspection",
                 "php"
             ],
-            "time": "2020-05-11T13:08:53+00:00"
+            "time": "2020-05-27T15:12:09+00:00"
         },
         {
             "name": "webmozart/assert",

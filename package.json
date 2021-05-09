@@ -60,7 +60,7 @@
     "@wordpress/eslint-plugin": "7.1.0",
     "browser-sync": "2.26.7",
     "browser-sync-webpack-plugin": "2.2.2",
-    "commitizen": "4.1.2",
+    "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.2.0",
     "eslint": "7.3.1",
     "eslint-config-airbnb": "18.2.0",

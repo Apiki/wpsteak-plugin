@@ -15,7 +15,7 @@
     "phpunit/phpunit": "9.5.4",
     "wp-coding-standards/wpcs": "2.3.0",
     "slevomat/coding-standard": "7.0.8",
-    "edgedesign/phpqa": "1.24.0",
+    "edgedesign/phpqa": "^1.24.0",
     "php-stubs/wordpress-stubs": "5.7.1",
     "szepeviktor/phpstan-wordpress": "0.7.5",
     "nette/neon": "3.2.2",

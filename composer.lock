@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66d2427a371655a9af2e93d949b215ba",
+    "content-hash": "66adbeb003e3ff23a3892ec0670d91e0",
     "packages": [
         {
             "name": "apiki/wpsteak",

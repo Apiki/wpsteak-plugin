@@ -8049,7 +8049,6 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 "prettier@npm:wp-prettier@2.0.5":
-  name wp-prettier
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/wp-prettier/-/wp-prettier-2.0.5.tgz#1aeff6000142d61bfbd7cc35a3d561551b25399f"
   integrity sha512-5GCgdeevIXwR3cW4Qj5XWC5MO1iSCz8+IPn0mMw6awAt/PBiey8yyO7MhePRsaMqghJAhg6Q3QLYWSnUHWkG6A==
@@ -10661,9 +10660,9 @@ write@1.0.3:
     mkdirp "^0.5.1"
 
 ws@~7.4.2:
-  version "7.4.5"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.5.tgz#a484dd851e9beb6fdb420027e3885e8ce48986c1"
-  integrity sha512-xzyu3hFvomRfXKH8vOFMU3OguG6oOvhXMo3xsGy3xWExqaM2dxBbVxuD99O7m3ZUFMvvscsZDqxfgMaRr/Nr1g==
+  version "7.4.6"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.6.tgz#5654ca8ecdeee47c33a9a4bf6d28e2be2980377c"
+  integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
 
 xmlhttprequest-ssl@~1.6.2:
   version "1.6.3"

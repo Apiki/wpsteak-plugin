@@ -29,8 +29,8 @@
     }
   },
   "dependencies": {
-    "@babel/core": "7.10.4",
-    "@babel/preset-env": "7.10.4",
+    "@babel/core": "7.25.9",
+    "@babel/preset-env": "7.25.9",
     "airbnb-browser-shims": "3.3.0",
     "autoprefixer": "^10.2.5",
     "babel-loader": "8.1.0",
@@ -54,7 +54,7 @@
     "webpack-spritesmith": "1.1.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "7.10.4",
+    "@babel/preset-react": "7.25.9",
     "@commitlint/cli": "^13.0.0",
     "@commitlint/config-conventional": "^13.0.0",
     "@wordpress/eslint-plugin": "7.1.0",

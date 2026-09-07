@@ -13,7 +13,7 @@
     "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
     "phpcompatibility/phpcompatibility-wp": "2.1.1",
     "phpunit/phpunit": "9.5.4",
-    "wp-coding-standards/wpcs": "2.3.0",
+    "wp-coding-standards/wpcs": "3.4.1",
     "slevomat/coding-standard": "7.0.8",
     "edgedesign/phpqa": "^1.24.0",
     "php-stubs/wordpress-stubs": "5.7.1",

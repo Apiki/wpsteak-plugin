@@ -57,7 +57,7 @@
     "@babel/preset-react": "7.10.4",
     "@commitlint/cli": "^13.0.0",
     "@commitlint/config-conventional": "^13.0.0",
-    "@wordpress/eslint-plugin": "7.1.0",
+    "@wordpress/eslint-plugin": "7.4.0",
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "2.2.2",
     "commitizen": "^4.2.4",

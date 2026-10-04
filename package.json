@@ -61,7 +61,7 @@
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "2.2.2",
     "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "3.2.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "7.3.1",
     "eslint-config-airbnb": "18.2.0",
     "eslint-plugin-import": "2.22.0",

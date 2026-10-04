@@ -4,7 +4,7 @@
   "type": "wordpress-plugin",
   "license": "GPL-2.0-only",
   "require": {
-    "apiki/wpsteak": "0.1.2",
+    "apiki/wpsteak": "1.0.0",
     "composer/installers": "1.11.0",
     "league/container": "3.3.5",
     "php": ">=7.4"
